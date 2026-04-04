@@ -260,8 +260,22 @@ After fixing the invalid-move handling, neither model achieves legitimate draws.
 - 49% GPU utilization
 - ~3 min/round, continuing to round 180
 
+## 2026-04-04: R144 evaluation — performance unstable
+
+### R144 vs minimax(0.1s): 0-10 (no draws)
+**Worse than R118!** The model oscillates. R118 had 3 draws as A (losses at 55+ moves),
+but R144 is back to losing at 23 moves. Likely causes:
+1. Ring buffer (20 rounds) drops old data that contained useful patterns
+2. Self-play quality oscillates as the model changes
+3. No external signal — the model only learns from itself
+
+### Core problem: AlphaZero-style training with no external teacher
+The model gets very good at self-play but doesn't discover tactical patterns
+that a stronger opponent would exploit. Self-play at any sim count cannot
+teach what the model doesn't know to look for.
+
 ### Remaining approaches
-1. Continue current training (more rounds = more strength)
-2. Higher sims (800+) during training
-3. Expert iteration with minimax verification
-4. Curriculum learning (shorter win length)
+1. **Increase ring buffer** to 50+ rounds to stabilize training
+2. **Expert iteration**: mix minimax games into training data
+3. **Adversarial training**: play MCTS vs minimax during self-play
+4. **Reduce lr** to prevent catastrophic forgetting of defensive patterns
