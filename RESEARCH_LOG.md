@@ -214,3 +214,38 @@ but A-side play is weak.
 3. **Adversarial training** — mix in minimax as opponent to teach threat avoidance
 4. **More search during training** — 300 sims = ~3 ply effective depth;
    need 500+ for deeper tactical awareness
+
+## 2026-04-04: Big model training (3.6M params) + cross-eval bug discovery
+
+### Big model (12 blocks, 128 filters, 3.6M params) progressive training
+- Phase 1 (50 sims, 30 rounds): Policy 6.12 -> 2.28. Faster learning than small model.
+- Phase 2 (200 sims, 30 rounds): Policy -> 2.75
+- Phase 3 (400 sims, 20 rounds): Policy -> 2.75
+- Total: 80 rounds in 90.6 min
+
+### Cross-eval results
+Both big and small models still lose to minimax 0-10. However, discovered that
+the minimax bot has a **blind spot**: it returns invalid moves (depth=0, returns
+origin cell) for certain positions created by our model's unusual move patterns.
+The positions have pieces spread far from center (e.g., (4,-4), (-3,2)), which
+may confuse the minimax's candidate generation algorithm.
+
+### Key insight
+The earlier "draws" against the minimax were actually caused by:
+1. A cross-eval bug (invalid moves not properly handled)
+2. The minimax crashing on unusual board positions our model creates
+
+After fixing the invalid-move handling, neither model achieves legitimate draws.
+
+### Current state of the art
+- Small model R198 (613K, 50+200+300 sims, ~200 rounds): loses to minimax
+- Big model R79 (3.6M, 50+200+400 sims, 80 rounds): loses to minimax
+- Both models: 68 passing tests, clean architecture
+- The fundamental gap: self-play doesn't discover deep tactical threats
+
+### Remaining approaches to try
+1. **Much longer training** — the big model has barely started converging
+2. **Higher sims** (800+) during training — expensive but necessary for depth
+3. **Curriculum learning** — start with simpler (smaller board or shorter win length)
+4. **Expert iteration** — use minimax to verify/improve MCTS policy targets
+5. **Direct threat detection** — add auxiliary head for threat patterns

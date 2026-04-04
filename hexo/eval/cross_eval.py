@@ -163,12 +163,14 @@ def play_cross_game(mcts_bot, minimax_bot, mcts_is_a=True,
 
 
 def run_cross_eval(model_path: str, n_games: int = 10, n_sims: int = 200,
-                   minimax_time: float = 0.5, device=None):
+                   minimax_time: float = 0.5, device=None,
+                   model_kwargs: dict = None):
     """Run cross-evaluation between trained MCTS model and minimax bot."""
     if device is None:
         device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-    model = HexONet().to(device)
+    kwargs = model_kwargs or {}
+    model = HexONet(**kwargs).to(device)
     from hexo.training.checkpoint import load_checkpoint
     load_checkpoint(model_path, model, device=device)
     model.eval()
