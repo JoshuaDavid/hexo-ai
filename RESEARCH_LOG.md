@@ -122,3 +122,21 @@
 - Add Cython for puct_select (still 38% of self-play time)
 - Profile GPU utilization during training (target 25%)
 - Build proper Elo tracking across rounds
+
+## 2026-04-04: Cross-evaluation vs HexTicTacToe minimax bot
+
+### Result: Minimax 6 - 0 MCTS (round 19 model, 200 sims vs 0.5s minimax)
+
+The minimax bot with learned pattern evaluation dominates our NN agent.
+Games end in 19-41 moves. Not surprising:
+- Our model trained for only 6 minutes total, with 50 sims during self-play
+- The minimax bot has hand-tuned pattern evaluation + deep alpha-beta search
+- Our model is only 613K params
+- Self-play quality limited (playing against itself at low strength)
+
+### Path to closing the gap
+1. **More training rounds** — 20 rounds is barely started. Need 100+.
+2. **More sims during training** — 50 sims gives weak policy targets. 200+ needed.
+3. **Larger model** — 613K may be too small for complex patterns.
+4. **Match evaluation depth** — minimax searches 4-6 plies; MCTS with 200 sims
+   effectively searches 2-3 plies (visit concentration).
