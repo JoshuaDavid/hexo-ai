@@ -16,6 +16,7 @@ from hexo.mcts.noise import add_exploration_noise
 
 MAX_DEPTH = 100
 EXPAND_VISITS = 1
+ROOT_TOP_K = 128     # candidates for root node
 NON_ROOT_TOP_K = 64  # candidates for non-root nodes
 
 _ALL_CELLS = frozenset((q, r) for q in range(BOARD_SIZE) for r in range(BOARD_SIZE))
@@ -44,12 +45,12 @@ def _build_tree_from_eval(
     else:
         cands = {(BOARD_SIZE // 2, BOARD_SIZE // 2)}
 
-    # Build (action, prior) list from policy logits
+    # Build (action, prior) list from top-K policy logits
     probs = F.softmax(policy_logits, dim=0)
     cand_indices = [cell_to_idx(q, r) for q, r in cands]
     cand_values = probs[cand_indices].tolist()
     cand_priors = sorted(zip(cand_indices, cand_values),
-                         key=lambda x: x[1], reverse=True)
+                         key=lambda x: x[1], reverse=True)[:ROOT_TOP_K]
 
     init_node_children(pos.move_node, cand_priors)
 

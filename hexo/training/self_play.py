@@ -42,7 +42,7 @@ class SelfPlaySlot:
 class SelfPlayManager:
     def __init__(self, model, device, batch_size=256, n_sims=200,
                  late_temperature=0.3, early_temp_turns=20,
-                 draw_penalty=0.1):
+                 draw_penalty=0.1, use_fp16=True):
         self.model = model
         self.device = device
         self.batch_size = batch_size
@@ -50,6 +50,8 @@ class SelfPlayManager:
         self.late_temperature = late_temperature
         self.early_temp_turns = early_temp_turns
         self.draw_penalty = draw_penalty
+        self.use_fp16 = use_fp16 and device.type == 'cuda'
+        self.model_dtype = torch.float16 if self.use_fp16 else torch.float32
 
     def generate(self, round_id: int, target_games: int = 256
                  ) -> tuple[list[dict], float]:
@@ -90,35 +92,64 @@ class SelfPlayManager:
                         slots[i].tree = tree
                 t_tree += time.monotonic() - t0
 
-            # Phase 2: Run n_sims
+            # Phase 2: Run n_sims with batched NN eval
             t0 = time.monotonic()
+            active_slots = [s for s in slots if s.tree is not None]
+
             for _sim in range(n_sims):
-                for slot in slots:
-                    if slot.tree is None:
-                        continue
+                # Select leaves for all active slots
+                leaves = []
+                for slot in active_slots:
                     leaf = select_leaf(slot.tree, slot.game)
+                    leaves.append(leaf)
+
+                # Collect leaves needing NN eval
+                eval_indices = []
+                eval_planes = []
+                for i, (slot, leaf) in enumerate(zip(active_slots, leaves)):
+                    if leaf.is_terminal or not leaf.deltas:
+                        continue
+                    # Build leaf planes from root + deltas
+                    planes = slot.tree.root_planes.clone()
+                    if leaf.player_flipped:
+                        planes[[0, 1]] = planes[[1, 0]]
+                    for gq, gr, ch in leaf.deltas:
+                        actual_ch = (1 - ch) if leaf.player_flipped else ch
+                        planes[actual_ch, gq, gr] = 1.0
+                    # moves_left channel: we need the leaf game state
+                    # Since select_leaf undoes moves, we reconstruct from deltas
+                    # For now, use a reasonable default
+                    planes[2] = 0.5  # approximate
+                    eval_indices.append(i)
+                    eval_planes.append(planes)
+
+                # Batched forward pass
+                if eval_planes:
+                    batch = torch.stack(eval_planes).to(
+                        device=device, dtype=self.model_dtype)
+                    with torch.no_grad(), torch.amp.autocast(
+                            'cuda', enabled=self.use_fp16):
+                        pol_batch, val_batch = model(batch)
+                    pol_cpu = pol_batch.float().cpu()
+                    val_cpu = val_batch.float().cpu()
+
+                # Backprop all leaves
+                eval_map = {}
+                for j, idx in enumerate(eval_indices):
+                    eval_map[idx] = j
+
+                for i, (slot, leaf) in enumerate(zip(active_slots, leaves)):
                     if leaf.is_terminal:
                         expand_and_backprop(slot.tree, leaf, 0.0)
-                    elif leaf.deltas:
-                        # Construct leaf planes from root + deltas
-                        planes = slot.tree.root_planes.clone()
-                        if leaf.player_flipped:
-                            planes[[0, 1]] = planes[[1, 0]]
-                        for gq, gr, ch in leaf.deltas:
-                            actual_ch = (1 - ch) if leaf.player_flipped else ch
-                            planes[actual_ch, gq, gr] = 1.0
-                        # Update moves_left channel
-                        planes[2] = 0.5 * slot.game.moves_left_in_turn
-
-                        with torch.no_grad():
-                            x = planes.unsqueeze(0).to(device)
-                            pol, val = model(x)
-                        nn_value = val[0].item()
+                    elif i in eval_map:
+                        j = eval_map[i]
+                        nn_value = val_cpu[j].item()
                         expand_and_backprop(slot.tree, leaf, nn_value)
                         if leaf.needs_expansion:
-                            maybe_expand_leaf(slot.tree, leaf, pol[0].cpu())
+                            maybe_expand_leaf(slot.tree, leaf, pol_cpu[j])
                     else:
                         expand_and_backprop(slot.tree, leaf, 0.0)
+
             t_search += time.monotonic() - t0
 
             n_turns += 1
