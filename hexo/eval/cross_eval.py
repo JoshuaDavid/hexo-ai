@@ -140,8 +140,14 @@ def play_cross_game(mcts_bot, minimax_bot, mcts_is_a=True,
         moves = bot.get_move(game)
         for q, r in moves:
             if not game.game_over:
-                game.make_move(q, r)
-                move_count += 1
+                ok = game.make_move(q, r)
+                if ok:
+                    move_count += 1
+                else:
+                    logger.warning(f"Invalid move ({q},{r}) by {type(bot).__name__}")
+                    # Force end the game to avoid infinite loop
+                    move_count = max_moves
+                    break
 
     winner_str = "MCTS" if (
         (game.winner == HTTPlayer.A and mcts_is_a) or
