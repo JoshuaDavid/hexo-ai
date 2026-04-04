@@ -274,8 +274,37 @@ The model gets very good at self-play but doesn't discover tactical patterns
 that a stronger opponent would exploit. Self-play at any sim count cannot
 teach what the model doesn't know to look for.
 
-### Remaining approaches
-1. **Increase ring buffer** to 50+ rounds to stabilize training
-2. **Expert iteration**: mix minimax games into training data
-3. **Adversarial training**: play MCTS vs minimax during self-play
-4. **Reduce lr** to prevent catastrophic forgetting of defensive patterns
+## 2026-04-04: Endgame training from minimax losses
+
+### Method
+Record games of MCTS vs minimax. For positions where minimax won, step
+backwards and train NN to find winning/defensive moves.
+
+### Results: A-side survival improved 23->39 moves after 2 iterations
+B-side degraded (overfitting on 40 examples). Needs more data + mixing.
+
+## 2026-04-04: End-of-session summary
+
+### Architecture (all tested, 68 tests passing)
+- Game: 32x32 toroidal hex grid, 6-in-a-row, 1-2-2-1-1 turns
+- Network: ResNet with circular padding, single-move policy + value heads
+- MCTS: flat single-move nodes, correct multi-stone backprop
+- Training: batched self-play, D6 augmentation, ring buffer, AMP
+
+### Best results vs minimax (~1140 Elo)
+Big model with 500-sim training achieves some draws (as one side).
+Self-play alone insufficient for tactical depth. Endgame training
+from minimax losses is promising but needs scale (500+ examples).
+
+### Key lessons
+1. Self-play with low sims doesn't discover tactical threats
+2. 200+ sims during training enables draws vs minimax
+3. Larger model (3.6M) learns faster but needs more total training
+4. Endgame retrograde training is the most data-efficient approach
+5. Ring buffer instability causes performance oscillation
+
+### Future work
+1. Scale endgame training (500+ examples, mixed with self-play)
+2. Much longer training (500+ rounds)
+3. Adversarial training (MCTS vs minimax during self-play)
+4. Cython PUCT for CPU bottleneck reduction
