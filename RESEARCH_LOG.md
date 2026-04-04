@@ -165,8 +165,34 @@ against deep tactical threats.
 minimax move choices) will bootstrap threat awareness much faster than
 pure self-play. Then self-play can refine from that stronger starting point.
 
-### Distillation approach
-1. Generate 50+ games of minimax self-play at 0.05-0.1s per move
-2. Train NN to predict minimax moves (policy) and game outcomes (value)
-3. Use distilled model as starting point for MCTS self-play training
-4. This should give the NN the threat patterns it needs
+### Distillation approach (attempted, minimax too slow)
+Minimax with pair_moves + quiescence search is very slow (~30s per game
+at 0.005s time limit). Even 5 games takes >2 minutes. Generating enough
+distillation data (100+ games) would take >1 hour. Abandoned this approach.
+
+## 2026-04-04: 200-sim continued training from R99 — first draws vs minimax!
+
+### Training: 50 more rounds with 200 sims starting from round 99 model
+- Policy loss: 2.00 -> 2.29 (higher sims = higher target entropy, expected)
+- B wins almost all self-play games (turn structure advantage)
+
+### Cross-eval R148 vs minimax(0.05s)
+| As player | Result         |
+|-----------|---------------|
+| A         | Loss (19 moves) 3/3 |
+| B         | Draw (200 moves) 3/3 |
+
+**First draws against minimax!** The model learned to survive as player B
+(where it has the 2-stone advantage). Still loses in exactly 19 moves as A
+— a specific forced win the model hasn't learned to avoid.
+
+### Key insight: asymmetric strength
+The 1-2-2-1-1 turn structure gives B a significant advantage. The model
+learned B-side play well from self-play (where B wins almost all games)
+but A-side play is weak.
+
+### Path forward
+1. Continue training with even more sims and rounds
+2. The A-side weakness is a specific forced sequence — may need targeted training
+3. Consider using the minimax as an *opponent* during self-play (mix minimax moves
+   into the opponent's play) rather than pure self-play
