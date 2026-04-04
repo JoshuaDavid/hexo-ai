@@ -140,3 +140,33 @@ Games end in 19-41 moves. Not surprising:
 3. **Larger model** — 613K may be too small for complex patterns.
 4. **Match evaluation depth** — minimax searches 4-6 plies; MCTS with 200 sims
    effectively searches 2-3 plies (visit concentration).
+
+## 2026-04-04: 100-round training, still 0-6 vs minimax at any time control
+
+### Training complete: 100 rounds in 54.8 min
+Policy loss: 6.39 -> 2.00 (round 0 -> round 99)
+Games got much shorter in self-play (avg ~25 moves -> ~12 moves).
+
+### Cross-eval results (round 99, 400 sims)
+| Minimax time | MCTS wins | Minimax wins |
+|-------------|-----------|--------------|
+| 0.01s       | 0         | 6            |
+| 0.05s       | 0         | 6            |
+| 0.1s        | 0         | 6            |
+| 0.5s        | 0         | 6            |
+
+### Key insight: self-play alone isn't enough at this stage
+The NN learns to play well against itself but not against threats it
+hasn't seen. Self-play at 50 sims produces games where both players
+make similar mistakes — the model never learns to exploit or defend
+against deep tactical threats.
+
+**Hypothesis**: Distillation from the minimax bot (supervised learning on
+minimax move choices) will bootstrap threat awareness much faster than
+pure self-play. Then self-play can refine from that stronger starting point.
+
+### Distillation approach
+1. Generate 50+ games of minimax self-play at 0.05-0.1s per move
+2. Train NN to predict minimax moves (policy) and game outcomes (value)
+3. Use distilled model as starting point for MCTS self-play training
+4. This should give the NN the threat patterns it needs
