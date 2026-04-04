@@ -243,9 +243,25 @@ After fixing the invalid-move handling, neither model achieves legitimate draws.
 - Both models: 68 passing tests, clean architecture
 - The fundamental gap: self-play doesn't discover deep tactical threats
 
-### Remaining approaches to try
-1. **Much longer training** — the big model has barely started converging
-2. **Higher sims** (800+) during training — expensive but necessary for depth
-3. **Curriculum learning** — start with simpler (smaller board or shorter win length)
-4. **Expert iteration** — use minimax to verify/improve MCTS policy targets
-5. **Direct threat detection** — add auxiliary head for threat patterns
+## 2026-04-04: 500-sim long training — defensive improvement as A
+
+### Big model R118 (500sim training, 800sim eval) vs minimax(0.1s)
+| As player | Wins | Losses | Draws |
+|-----------|------|--------|-------|
+| A         | 0    | 2      | 3     |
+| B         | 0    | 5      | 0     |
+
+**A-side improving**: 3 draws out of 5 (was all losses at R97). Losses now take
+55-59 moves (was 23). B-side still loses at 33 moves consistently.
+
+### Training status
+- Big model (3.6M) at round 118 with 500 sims
+- Policy loss: 2.75, value loss: 0.41
+- 49% GPU utilization
+- ~3 min/round, continuing to round 180
+
+### Remaining approaches
+1. Continue current training (more rounds = more strength)
+2. Higher sims (800+) during training
+3. Expert iteration with minimax verification
+4. Curriculum learning (shorter win length)
