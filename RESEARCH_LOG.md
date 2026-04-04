@@ -85,8 +85,40 @@
 - B wins more than A (21 vs 11 in round 4) — possible first-mover disadvantage in this turn structure?
 - Total: 4.2 minutes for 5 rounds. Very workable.
 
+## 2026-04-04: 20-round training — significant strength gain
+
+### Training curve (20 rounds, 50 sims, 32 slots, 6.1 min total)
+| Round | Policy Loss | Value Loss | Entropy |
+|-------|------------|------------|---------|
+| 0     | 5.34       | 0.98       | 5.36    |
+| 5     | 4.30       | 0.98       | 4.33    |
+| 10    | 3.47       | 0.72       | 3.49    |
+| 15    | 3.02       | 0.49       | 3.04    |
+| 19    | 2.64       | 0.35       | 2.66    |
+
+### Arena results (50 sims each)
+- Round 19 vs Random: 10/10 wins, avg 12 moves
+- Round 19 vs Round 4: 20/20 wins (both sides), avg 12 moves
+- Round 4 vs Random: 20/20 wins, avg 38 moves
+
+### Key observations
+- Model learns to win in ~12 moves by round 19 (was ~42 at round 4)
+- Policy loss dropped from 5.34 to 2.64 — substantial learning
+- Value loss decreased from 0.98 to 0.35 — much better position evaluation
+- 0% draw rate from round 1 onwards — all games decisive
+- B wins slightly more often in self-play (might indicate turn structure asymmetry)
+
+### What's working
+1. Single-move policy head is sufficient (no pair attention needed)
+2. Flat MCTS with correct multi-stone backprop works
+3. D6 augmentation providing good data efficiency
+4. Even 50 sims is enough for learning signal
+5. 613K param model is learning effectively
+
 ### Next steps
-- Build arena evaluation (model vs model, model vs random)
-- Run longer training (20+ rounds)
-- Profile GPU utilization during training
-- Consider scaling model (currently 613K params — very small)
+- Ablation: try without moves-left channel
+- Scale up: more sims (200), more games, more rounds
+- Scale up: larger model (128 filters, 12 blocks)
+- Add Cython for puct_select (still 38% of self-play time)
+- Profile GPU utilization during training (target 25%)
+- Build proper Elo tracking across rounds
