@@ -191,8 +191,26 @@ The 1-2-2-1-1 turn structure gives B a significant advantage. The model
 learned B-side play well from self-play (where B wins almost all games)
 but A-side play is weak.
 
-### Path forward
-1. Continue training with even more sims and rounds
-2. The A-side weakness is a specific forced sequence — may need targeted training
-3. Consider using the minimax as an *opponent* during self-play (mix minimax moves
-   into the opponent's play) rather than pure self-play
+## 2026-04-04: Training progression summary + R198 evaluation
+
+### Model progression vs minimax(0.05s, 400 MCTS sims)
+| Model | Training | MCTS wins | MM wins | Draws |
+|-------|----------|-----------|---------|-------|
+| R19   | 20r, 50sim | 0 | 6 | 0 |
+| R99   | 100r, 50sim | 0 | 6 | 0 |
+| R148  | +50r, 200sim | 0 | 3 | 3 |
+| R198  | +50r, 300sim | 0 | 3 | 3 |
+
+### Key findings
+1. **50 sims** isn't enough for tactical depth — model learns policy but not threats
+2. **200+ sims** enabled the jump from 0-6 to 0-3 (draws as B)
+3. **300 sims** didn't improve further — the bottleneck is model capacity or training signal
+4. **B-side play is strong**: draws against all minimax time controls (0.01-0.1s)
+5. **A-side has specific forced loss**: always loses in exactly 31 moves as A
+
+### What's needed to beat the minimax
+1. **A-side training** — the model needs to experience and learn from A-side losses
+2. **Larger model** — 613K params may limit positional understanding
+3. **Adversarial training** — mix in minimax as opponent to teach threat avoidance
+4. **More search during training** — 300 sims = ~3 ply effective depth;
+   need 500+ for deeper tactical awareness
