@@ -389,8 +389,27 @@ search bug on positions with spread-out pieces.
 | GPU utilization | ~49% |
 | Test suite | 68 passing |
 
+## 2026-04-05: Long 500-sim training complete (200 rounds, 7.5 hours)
+
+### Final model: R399 (big model, 3.6M params, 200 rounds @ 500 sims)
+Policy loss: 2.96 → 2.57 over 200 rounds.
+
+### Comprehensive evaluation
+| Opponent | Result |
+|----------|--------|
+| Random | 10-0 (avg 13 moves) |
+| R215 (earlier self) | 10-0 |
+| Minimax (0.05s) | 0-6 |
+
+### Summary
+The model is genuinely strong against random play and shows clear
+improvement through training, but cannot compete with the minimax's
+tactical search at any time control. The gap is in deep tactical
+pattern recognition — the minimax finds forced wins that the NN's
+200-800 sim MCTS can't discover.
+
 ### Future work
-1. Continue long self-play training (more rounds)
-2. Fix minimax interaction (handle its crashes cleanly in eval)
-3. Try the HexTicTacToe learned eval NN as opponent instead of minimax
-4. Cython PUCT to increase effective search depth
+1. Implement proper minimax-as-opponent training (fix crash issue first)
+2. Cython PUCT for higher effective search depth per time unit
+3. Try the HexTicTacToe's NN-based eval (learned_eval/) as a faster teacher
+4. Curriculum: start with 4-in-a-row (simpler) then transfer to 6
