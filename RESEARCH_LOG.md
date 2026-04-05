@@ -303,8 +303,39 @@ from minimax losses is promising but needs scale (500+ examples).
 4. Endgame retrograde training is the most data-efficient approach
 5. Ring buffer instability causes performance oscillation
 
+## 2026-04-05: Endgame curriculum v2 — 868 examples, best 0-5 (5 draws)
+
+### Method
+- 10 iterations of: record 8 games vs minimax -> extract endgame positions -> mix with self-play -> train
+- 868 total endgame examples from 10 iterations
+- Mixed 50/50 with fresh self-play data each iteration
+
+### Eval results across iterations (10 games, 500-800 sims, vs minimax)
+| Iter | Examples | vs mm(0.1s) | vs mm(0.05s) |
+|------|----------|-------------|--------------|
+| 1    | 268      | 0-6-0       | -            |
+| 3    | 376      | 0-6-0       | -            |
+| 5    | ~500     | 0-6-0       | -            |
+| 7    | 696      | 0-3-3       | 0-10-0       |
+| 9    | 868      | 0-6-0       | 0-10-0       |
+
+**Best: iter 7 at 0-5 with 5 draws vs minimax(0.1s).**
+
+### Issues discovered
+1. **Minimax crashes on certain positions** — our model's unusual play creates
+   board states the minimax candidate generation can't handle. ~50% of games
+   produce BROKEN results where the minimax returns occupied cells.
+2. **Model oscillates** — endgame training helps then hurts as data accumulates
+3. **Mixing ratio matters** — 50/50 endgame+self-play may not be optimal
+
+### Current best performance
+- EG iter7 (800 sims) vs minimax(0.1s): **0-5 with 5 draws**
+- Still 0-10 vs minimax(0.05s)
+- Self-play Elo: beats random 20/20 in ~12 moves
+
 ### Future work
-1. Scale endgame training (500+ examples, mixed with self-play)
-2. Much longer training (500+ rounds)
-3. Adversarial training (MCTS vs minimax during self-play)
-4. Cython PUCT for CPU bottleneck reduction
+1. Fix the minimax crash issue (our positions create edge cases in candidate gen)
+2. Progressive retrograde (the user's original suggestion — step back gradually)
+3. Larger ring buffer + lower LR to reduce oscillation
+4. Cython PUCT for CPU bottleneck
+5. Consider using the HexTicTacToe learned eval NN instead of minimax for data generation
