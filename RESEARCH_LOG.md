@@ -333,9 +333,28 @@ from minimax losses is promising but needs scale (500+ examples).
 - Still 0-10 vs minimax(0.05s)
 - Self-play Elo: beats random 20/20 in ~12 moves
 
+## 2026-04-05: Endgame v3 — 1800+ examples, optimal ratio finding
+
+### V3 method: pre-load 696 examples, 12 games/iter, mix with 32-game self-play
+Started from best v2 iter 7 model. 20 iterations planned.
+
+### Key finding: optimal endgame/self-play ratio exists
+| V3 Iter | Endgame examples | vs mm(0.1s) |
+|---------|-----------------|-------------|
+| 2       | 1,332           | **0-5 (5 draws)** |
+| 5       | 1,806           | 0-10        |
+
+Too much endgame data → overfitting → lose general play.
+The sweet spot is ~1300 endgame examples mixed with ~400 self-play.
+
+### Best overall result
+**0-5 with 5 draws vs minimax(0.1s, ~1140 Elo)** achieved by endgame
+curriculum training. The model can survive as one player against a
+strong classical search engine.
+
 ### Future work
-1. Fix the minimax crash issue (our positions create edge cases in candidate gen)
-2. Progressive retrograde (the user's original suggestion — step back gradually)
-3. Larger ring buffer + lower LR to reduce oscillation
-4. Cython PUCT for CPU bottleneck
-5. Consider using the HexTicTacToe learned eval NN instead of minimax for data generation
+1. Find better endgame/self-play ratio (try 30/70 instead of 75/25)
+2. Decay old endgame examples (recent ones more relevant)
+3. Use EWC or similar to prevent catastrophic forgetting
+4. Cython PUCT for throughput improvement
+5. Try using minimax NN eval instead of alpha-beta for data generation
