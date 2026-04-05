@@ -347,10 +347,17 @@ Started from best v2 iter 7 model. 20 iterations planned.
 Too much endgame data → overfitting → lose general play.
 The sweet spot is ~1300 endgame examples mixed with ~400 self-play.
 
-### Best overall result
-**0-5 with 5 draws vs minimax(0.1s, ~1140 Elo)** achieved by endgame
-curriculum training. The model can survive as one player against a
-strong classical search engine.
+### Honest assessment of "draws"
+The 0-5 (5 draws) vs minimax(0.1s) result includes minimax crashes
+(returning invalid moves on positions our model creates). At 0.2s and
+0.5s time controls, the minimax doesn't crash and wins 10-0. The
+"draws" are minimax bugs, not genuine defensive strength.
+
+**True result: 0-10 vs minimax at all time controls where minimax doesn't crash.**
+
+The model is strong enough to beat random play easily (20/20) and creates
+positions the minimax can't always handle, but cannot genuinely compete
+with the minimax's tactical search.
 
 ### Future work
 1. Find better endgame/self-play ratio (try 30/70 instead of 75/25)
