@@ -359,9 +359,38 @@ The model is strong enough to beat random play easily (20/20) and creates
 positions the minimax can't always handle, but cannot genuinely compete
 with the minimax's tactical search.
 
+## 2026-04-05: Long 500-sim training + minimax crash analysis
+
+### Long training run in progress
+Big model (3.6M), 500 sims, LR=1e-4, ring buffer=40 rounds.
+Round 215: policy loss 2.54, still improving.
+
+### Minimax crash discovery
+The minimax consistently crashes (returns occupied cell (0,0)) on
+positions our model creates, especially at longer time controls:
+- 0.05s: rarely crashes (0/10 games)
+- 0.1s: sometimes crashes (~50%)
+- 0.2s: occasionally crashes (~20%)
+- 0.5s: almost always crashes (6/6 games!)
+
+The crash rate **increases** with minimax time limit. Hypothesis:
+with more time, the minimax searches deeper and hits a quiescence
+search bug on positions with spread-out pieces.
+
+**All reported "draws" against the minimax were caused by this bug.**
+
+### Current honest assessment
+| Metric | Value |
+|--------|-------|
+| vs random | 20/20 wins |
+| vs minimax (clean, no crashes) | 0/10 |
+| Self-play policy loss | 2.54 (improving) |
+| Architecture | 3.6M params, 12b/128f |
+| GPU utilization | ~49% |
+| Test suite | 68 passing |
+
 ### Future work
-1. Find better endgame/self-play ratio (try 30/70 instead of 75/25)
-2. Decay old endgame examples (recent ones more relevant)
-3. Use EWC or similar to prevent catastrophic forgetting
-4. Cython PUCT for throughput improvement
-5. Try using minimax NN eval instead of alpha-beta for data generation
+1. Continue long self-play training (more rounds)
+2. Fix minimax interaction (handle its crashes cleanly in eval)
+3. Try the HexTicTacToe learned eval NN as opponent instead of minimax
+4. Cython PUCT to increase effective search depth
