@@ -1,0 +1,401 @@
+2026-04-05 02:11:32,967 hexo.training.pipeline INFO === Round 200 ===
+2026-04-05 02:14:01,390 hexo.training.pipeline INFO   Epoch 1: loss=3.7447 policy=2.9634 value=0.8116 entropy=3.0312
+2026-04-05 02:14:01,409 hexo.training.pipeline INFO === Round 201 ===
+2026-04-05 02:16:29,019 hexo.training.pipeline INFO   Epoch 1: loss=3.6122 policy=2.8776 value=0.7646 entropy=3.0045
+2026-04-05 02:16:29,039 hexo.training.pipeline INFO === Round 202 ===
+2026-04-05 02:18:38,613 hexo.training.pipeline INFO   Epoch 1: loss=3.5449 policy=2.9659 value=0.6086 entropy=2.9638
+2026-04-05 02:18:38,632 hexo.training.pipeline INFO === Round 203 ===
+2026-04-05 02:20:35,451 hexo.training.pipeline INFO   Epoch 1: loss=3.5882 policy=2.9949 value=0.6232 entropy=2.9928
+2026-04-05 02:20:35,531 hexo.training.pipeline INFO === Round 204 ===
+2026-04-05 02:22:14,264 hexo.training.pipeline INFO   Epoch 1: loss=3.4255 policy=2.8533 value=0.6009 entropy=2.8724
+2026-04-05 02:22:14,284 hexo.training.pipeline INFO === Round 205 ===
+2026-04-05 02:23:46,955 hexo.training.pipeline INFO   Epoch 1: loss=3.2705 policy=2.8053 value=0.4936 entropy=2.8379
+2026-04-05 02:23:46,975 hexo.training.pipeline INFO === Round 206 ===
+2026-04-05 02:25:21,535 hexo.training.pipeline INFO   Epoch 1: loss=3.2273 policy=2.7992 value=0.4562 entropy=2.8100
+2026-04-05 02:25:21,555 hexo.training.pipeline INFO === Round 207 ===
+2026-04-05 02:27:02,375 hexo.training.pipeline INFO   Epoch 1: loss=3.1236 policy=2.7389 value=0.4124 entropy=2.7632
+2026-04-05 02:27:02,394 hexo.training.pipeline INFO === Round 208 ===
+2026-04-05 02:28:39,851 hexo.training.pipeline INFO   Epoch 1: loss=3.0281 policy=2.7127 value=0.3428 entropy=2.7368
+2026-04-05 02:28:39,871 hexo.training.pipeline INFO === Round 209 ===
+2026-04-05 02:30:35,487 hexo.training.pipeline INFO   Epoch 1: loss=3.0288 policy=2.7091 value=0.3470 entropy=2.7375
+2026-04-05 02:30:35,507 hexo.training.pipeline INFO === Round 210 ===
+2026-04-05 02:32:20,644 hexo.training.pipeline INFO   Epoch 1: loss=2.9621 policy=2.6775 value=0.3117 entropy=2.7102
+2026-04-05 02:32:20,664 hexo.training.pipeline INFO === Round 211 ===
+2026-04-05 02:34:14,440 hexo.training.pipeline INFO   Epoch 1: loss=2.9275 policy=2.6494 value=0.3047 entropy=2.6694
+2026-04-05 02:34:14,460 hexo.training.pipeline INFO === Round 212 ===
+2026-04-05 02:35:47,540 hexo.training.pipeline INFO   Epoch 1: loss=2.8739 policy=2.6136 value=0.2866 entropy=2.6371
+2026-04-05 02:35:47,560 hexo.training.pipeline INFO === Round 213 ===
+2026-04-05 02:37:42,792 hexo.training.pipeline INFO   Epoch 1: loss=2.8581 policy=2.5700 value=0.3141 entropy=2.5937
+2026-04-05 02:37:42,812 hexo.training.pipeline INFO === Round 214 ===
+2026-04-05 02:39:17,232 hexo.training.pipeline INFO   Epoch 1: loss=2.7741 policy=2.5394 value=0.2603 entropy=2.5633
+2026-04-05 02:39:17,252 hexo.training.pipeline INFO === Round 215 ===
+2026-04-05 02:41:02,238 hexo.training.pipeline INFO   Epoch 1: loss=2.7507 policy=2.5357 value=0.2406 entropy=2.5596
+2026-04-05 02:41:02,258 hexo.training.pipeline INFO === Round 216 ===
+2026-04-05 02:42:52,176 hexo.training.pipeline INFO   Epoch 1: loss=2.6970 policy=2.4861 value=0.2359 entropy=2.5040
+2026-04-05 02:42:52,197 hexo.training.pipeline INFO === Round 217 ===
+2026-04-05 02:44:52,658 hexo.training.pipeline INFO   Epoch 1: loss=2.6346 policy=2.4496 value=0.2097 entropy=2.4676
+2026-04-05 02:44:52,679 hexo.training.pipeline INFO === Round 218 ===
+2026-04-05 02:47:06,721 hexo.training.pipeline INFO   Epoch 1: loss=2.6934 policy=2.4836 value=0.2348 entropy=2.5047
+2026-04-05 02:47:06,742 hexo.training.pipeline INFO === Round 219 ===
+2026-04-05 02:49:10,887 hexo.training.pipeline INFO   Epoch 1: loss=2.6390 policy=2.4772 value=0.1868 entropy=2.4987
+2026-04-05 02:49:10,907 hexo.training.pipeline INFO === Round 220 ===
+2026-04-05 02:50:57,636 hexo.training.pipeline INFO   Epoch 1: loss=2.6150 policy=2.4476 value=0.1921 entropy=2.4687
+2026-04-05 02:50:57,657 hexo.training.pipeline INFO === Round 221 ===
+2026-04-05 02:53:13,250 hexo.training.pipeline INFO   Epoch 1: loss=2.6496 policy=2.4559 value=0.2185 entropy=2.4766
+2026-04-05 02:53:13,270 hexo.training.pipeline INFO === Round 222 ===
+2026-04-05 02:55:27,065 hexo.training.pipeline INFO   Epoch 1: loss=2.7524 policy=2.4741 value=0.3032 entropy=2.4982
+2026-04-05 02:55:27,085 hexo.training.pipeline INFO === Round 223 ===
+2026-04-05 02:57:23,214 hexo.training.pipeline INFO   Epoch 1: loss=2.7506 policy=2.4490 value=0.3263 entropy=2.4741
+2026-04-05 02:57:23,234 hexo.training.pipeline INFO === Round 224 ===
+2026-04-05 02:59:20,389 hexo.training.pipeline INFO   Epoch 1: loss=2.7438 policy=2.4403 value=0.3283 entropy=2.4690
+2026-04-05 02:59:20,409 hexo.training.pipeline INFO === Round 225 ===
+2026-04-05 03:01:19,199 hexo.training.pipeline INFO   Epoch 1: loss=2.7170 policy=2.4485 value=0.2932 entropy=2.4713
+2026-04-05 03:01:19,219 hexo.training.pipeline INFO === Round 226 ===
+2026-04-05 03:03:47,921 hexo.training.pipeline INFO   Epoch 1: loss=2.7866 policy=2.4558 value=0.3557 entropy=2.4842
+2026-04-05 03:03:47,941 hexo.training.pipeline INFO === Round 227 ===
+2026-04-05 03:05:54,230 hexo.training.pipeline INFO   Epoch 1: loss=2.7649 policy=2.4324 value=0.3570 entropy=2.4551
+2026-04-05 03:05:54,250 hexo.training.pipeline INFO === Round 228 ===
+2026-04-05 03:08:11,874 hexo.training.pipeline INFO   Epoch 1: loss=2.8026 policy=2.4427 value=0.3846 entropy=2.4695
+2026-04-05 03:08:11,894 hexo.training.pipeline INFO === Round 229 ===
+2026-04-05 03:10:25,352 hexo.training.pipeline INFO   Epoch 1: loss=2.8145 policy=2.4561 value=0.3831 entropy=2.4744
+2026-04-05 03:10:25,372 hexo.training.pipeline INFO === Round 230 ===
+2026-04-05 03:12:24,415 hexo.training.pipeline INFO   Epoch 1: loss=2.8813 policy=2.5020 value=0.4046 entropy=2.5267
+2026-04-05 03:12:24,435 hexo.training.pipeline INFO === Round 231 ===
+2026-04-05 03:14:44,683 hexo.training.pipeline INFO   Epoch 1: loss=2.8978 policy=2.5361 value=0.3873 entropy=2.5584
+2026-04-05 03:14:44,703 hexo.training.pipeline INFO === Round 232 ===
+2026-04-05 03:16:58,506 hexo.training.pipeline INFO   Epoch 1: loss=2.9030 policy=2.5226 value=0.4059 entropy=2.5446
+2026-04-05 03:16:58,526 hexo.training.pipeline INFO === Round 233 ===
+2026-04-05 03:19:36,208 hexo.training.pipeline INFO   Epoch 1: loss=2.9255 policy=2.5987 value=0.3530 entropy=2.6216
+2026-04-05 03:19:36,229 hexo.training.pipeline INFO === Round 234 ===
+2026-04-05 03:21:55,720 hexo.training.pipeline INFO   Epoch 1: loss=2.9650 policy=2.6217 value=0.3698 entropy=2.6472
+2026-04-05 03:21:55,740 hexo.training.pipeline INFO === Round 235 ===
+2026-04-05 03:24:19,561 hexo.training.pipeline INFO   Epoch 1: loss=2.9558 policy=2.6074 value=0.3748 entropy=2.6324
+2026-04-05 03:24:19,581 hexo.training.pipeline INFO === Round 236 ===
+2026-04-05 03:26:48,527 hexo.training.pipeline INFO   Epoch 1: loss=2.9373 policy=2.6162 value=0.3476 entropy=2.6444
+2026-04-05 03:26:48,547 hexo.training.pipeline INFO === Round 237 ===
+2026-04-05 03:29:14,699 hexo.training.pipeline INFO   Epoch 1: loss=2.9310 policy=2.6042 value=0.3531 entropy=2.6320
+2026-04-05 03:29:14,719 hexo.training.pipeline INFO === Round 238 ===
+2026-04-05 03:31:54,466 hexo.training.pipeline INFO   Epoch 1: loss=2.9079 policy=2.5894 value=0.3447 entropy=2.6180
+2026-04-05 03:31:54,486 hexo.training.pipeline INFO === Round 239 ===
+2026-04-05 03:34:19,567 hexo.training.pipeline INFO   Epoch 1: loss=2.9409 policy=2.5963 value=0.3709 entropy=2.6197
+2026-04-05 03:34:19,586 hexo.training.pipeline INFO === Round 240 ===
+2026-04-05 03:37:08,446 hexo.training.pipeline INFO   Epoch 1: loss=2.9664 policy=2.6197 value=0.3731 entropy=2.6435
+2026-04-05 03:37:08,467 hexo.training.pipeline INFO === Round 241 ===
+2026-04-05 03:39:35,685 hexo.training.pipeline INFO   Epoch 1: loss=2.9181 policy=2.6032 value=0.3412 entropy=2.6262
+2026-04-05 03:39:35,705 hexo.training.pipeline INFO === Round 242 ===
+2026-04-05 03:42:02,047 hexo.training.pipeline INFO   Epoch 1: loss=2.9341 policy=2.5774 value=0.3827 entropy=2.6002
+2026-04-05 03:42:02,067 hexo.training.pipeline INFO === Round 243 ===
+2026-04-05 03:44:27,041 hexo.training.pipeline INFO   Epoch 1: loss=2.9297 policy=2.6002 value=0.3558 entropy=2.6289
+2026-04-05 03:44:27,060 hexo.training.pipeline INFO === Round 244 ===
+2026-04-05 03:47:09,975 hexo.training.pipeline INFO   Epoch 1: loss=2.9335 policy=2.6126 value=0.3472 entropy=2.6370
+2026-04-05 03:47:09,996 hexo.training.pipeline INFO === Round 245 ===
+2026-04-05 03:49:34,745 hexo.training.pipeline INFO   Epoch 1: loss=2.9495 policy=2.5944 value=0.3813 entropy=2.6200
+2026-04-05 03:49:34,766 hexo.training.pipeline INFO === Round 246 ===
+2026-04-05 03:51:41,814 hexo.training.pipeline INFO   Epoch 1: loss=2.8696 policy=2.5669 value=0.3285 entropy=2.5924
+2026-04-05 03:51:41,834 hexo.training.pipeline INFO === Round 247 ===
+2026-04-05 03:53:54,640 hexo.training.pipeline INFO   Epoch 1: loss=2.8605 policy=2.5388 value=0.3474 entropy=2.5631
+2026-04-05 03:53:54,660 hexo.training.pipeline INFO === Round 248 ===
+2026-04-05 03:56:20,286 hexo.training.pipeline INFO   Epoch 1: loss=2.8180 policy=2.5242 value=0.3193 entropy=2.5489
+2026-04-05 03:56:20,306 hexo.training.pipeline INFO === Round 249 ===
+2026-04-05 03:58:46,548 hexo.training.pipeline INFO   Epoch 1: loss=2.7999 policy=2.5355 value=0.2900 entropy=2.5604
+2026-04-05 03:58:46,568 hexo.training.pipeline INFO === Round 250 ===
+2026-04-05 04:01:09,387 hexo.training.pipeline INFO   Epoch 1: loss=2.8695 policy=2.5671 value=0.3283 entropy=2.5919
+2026-04-05 04:01:09,407 hexo.training.pipeline INFO === Round 251 ===
+2026-04-05 04:03:18,842 hexo.training.pipeline INFO   Epoch 1: loss=2.8499 policy=2.5291 value=0.3463 entropy=2.5558
+2026-04-05 04:03:18,861 hexo.training.pipeline INFO === Round 252 ===
+2026-04-05 04:05:31,447 hexo.training.pipeline INFO   Epoch 1: loss=2.9152 policy=2.5597 value=0.3814 entropy=2.5877
+2026-04-05 04:05:31,466 hexo.training.pipeline INFO === Round 253 ===
+2026-04-05 04:07:50,758 hexo.training.pipeline INFO   Epoch 1: loss=2.8968 policy=2.5173 value=0.4050 entropy=2.5467
+2026-04-05 04:07:50,778 hexo.training.pipeline INFO === Round 254 ===
+2026-04-05 04:10:19,883 hexo.training.pipeline INFO   Epoch 1: loss=2.9412 policy=2.5573 value=0.4097 entropy=2.5846
+2026-04-05 04:10:19,903 hexo.training.pipeline INFO === Round 255 ===
+2026-04-05 04:12:44,647 hexo.training.pipeline INFO   Epoch 1: loss=2.8848 policy=2.5434 value=0.3671 entropy=2.5732
+2026-04-05 04:12:44,667 hexo.training.pipeline INFO === Round 256 ===
+2026-04-05 04:15:07,496 hexo.training.pipeline INFO   Epoch 1: loss=2.9005 policy=2.5867 value=0.3399 entropy=2.6152
+2026-04-05 04:15:07,516 hexo.training.pipeline INFO === Round 257 ===
+2026-04-05 04:17:31,396 hexo.training.pipeline INFO   Epoch 1: loss=2.8716 policy=2.5759 value=0.3218 entropy=2.6029
+2026-04-05 04:17:31,416 hexo.training.pipeline INFO === Round 258 ===
+2026-04-05 04:19:46,831 hexo.training.pipeline INFO   Epoch 1: loss=2.9519 policy=2.6071 value=0.3711 entropy=2.6324
+2026-04-05 04:19:46,851 hexo.training.pipeline INFO === Round 259 ===
+2026-04-05 04:22:13,824 hexo.training.pipeline INFO   Epoch 1: loss=2.9070 policy=2.5622 value=0.3707 entropy=2.5892
+2026-04-05 04:22:13,845 hexo.training.pipeline INFO === Round 260 ===
+2026-04-05 04:24:32,315 hexo.training.pipeline INFO   Epoch 1: loss=2.9151 policy=2.6154 value=0.3261 entropy=2.6387
+2026-04-05 04:24:32,335 hexo.training.pipeline INFO === Round 261 ===
+2026-04-05 04:27:00,696 hexo.training.pipeline INFO   Epoch 1: loss=2.9439 policy=2.6439 value=0.3268 entropy=2.6686
+2026-04-05 04:27:00,716 hexo.training.pipeline INFO === Round 262 ===
+2026-04-05 04:29:26,065 hexo.training.pipeline INFO   Epoch 1: loss=2.9159 policy=2.6314 value=0.3111 entropy=2.6568
+2026-04-05 04:29:26,085 hexo.training.pipeline INFO === Round 263 ===
+2026-04-05 04:31:58,034 hexo.training.pipeline INFO   Epoch 1: loss=2.9232 policy=2.6349 value=0.3149 entropy=2.6598
+2026-04-05 04:31:58,071 hexo.training.pipeline INFO === Round 264 ===
+2026-04-05 04:34:22,530 hexo.training.pipeline INFO   Epoch 1: loss=2.9304 policy=2.6588 value=0.2984 entropy=2.6850
+2026-04-05 04:34:22,550 hexo.training.pipeline INFO === Round 265 ===
+2026-04-05 04:36:31,423 hexo.training.pipeline INFO   Epoch 1: loss=2.8777 policy=2.6448 value=0.2596 entropy=2.6685
+2026-04-05 04:36:31,443 hexo.training.pipeline INFO === Round 266 ===
+2026-04-05 04:38:47,265 hexo.training.pipeline INFO   Epoch 1: loss=2.8448 policy=2.6195 value=0.2518 entropy=2.6436
+2026-04-05 04:38:47,284 hexo.training.pipeline INFO === Round 267 ===
+2026-04-05 04:41:06,992 hexo.training.pipeline INFO   Epoch 1: loss=2.8237 policy=2.6175 value=0.2326 entropy=2.6405
+2026-04-05 04:41:07,012 hexo.training.pipeline INFO === Round 268 ===
+2026-04-05 04:43:25,160 hexo.training.pipeline INFO   Epoch 1: loss=2.7673 policy=2.6132 value=0.1805 entropy=2.6392
+2026-04-05 04:43:25,180 hexo.training.pipeline INFO === Round 269 ===
+2026-04-05 04:45:44,693 hexo.training.pipeline INFO   Epoch 1: loss=2.7320 policy=2.6101 value=0.1483 entropy=2.6339
+2026-04-05 04:45:44,713 hexo.training.pipeline INFO === Round 270 ===
+2026-04-05 04:48:00,006 hexo.training.pipeline INFO   Epoch 1: loss=2.7894 policy=2.6449 value=0.1712 entropy=2.6684
+2026-04-05 04:48:00,027 hexo.training.pipeline INFO === Round 271 ===
+2026-04-05 04:50:19,303 hexo.training.pipeline INFO   Epoch 1: loss=2.7821 policy=2.6476 value=0.1612 entropy=2.6701
+2026-04-05 04:50:19,323 hexo.training.pipeline INFO === Round 272 ===
+2026-04-05 04:52:38,255 hexo.training.pipeline INFO   Epoch 1: loss=2.7558 policy=2.6279 value=0.1544 entropy=2.6526
+2026-04-05 04:52:38,274 hexo.training.pipeline INFO === Round 273 ===
+2026-04-05 04:54:41,648 hexo.training.pipeline INFO   Epoch 1: loss=2.7736 policy=2.6401 value=0.1601 entropy=2.6616
+2026-04-05 04:54:41,668 hexo.training.pipeline INFO === Round 274 ===
+2026-04-05 04:56:59,749 hexo.training.pipeline INFO   Epoch 1: loss=2.7817 policy=2.6332 value=0.1751 entropy=2.6568
+2026-04-05 04:56:59,769 hexo.training.pipeline INFO === Round 275 ===
+2026-04-05 04:59:18,277 hexo.training.pipeline INFO   Epoch 1: loss=2.8521 policy=2.6347 value=0.2439 entropy=2.6533
+2026-04-05 04:59:18,296 hexo.training.pipeline INFO === Round 276 ===
+2026-04-05 05:01:34,855 hexo.training.pipeline INFO   Epoch 1: loss=2.8648 policy=2.6697 value=0.2221 entropy=2.6914
+2026-04-05 05:01:34,875 hexo.training.pipeline INFO === Round 277 ===
+2026-04-05 05:03:59,546 hexo.training.pipeline INFO   Epoch 1: loss=2.8606 policy=2.6706 value=0.2169 entropy=2.6921
+2026-04-05 05:03:59,566 hexo.training.pipeline INFO === Round 278 ===
+2026-04-05 05:06:15,427 hexo.training.pipeline INFO   Epoch 1: loss=2.8087 policy=2.6718 value=0.1638 entropy=2.6934
+2026-04-05 05:06:15,446 hexo.training.pipeline INFO === Round 279 ===
+2026-04-05 05:08:34,535 hexo.training.pipeline INFO   Epoch 1: loss=2.8447 policy=2.6905 value=0.1813 entropy=2.7144
+2026-04-05 05:08:34,555 hexo.training.pipeline INFO === Round 280 ===
+2026-04-05 05:11:05,414 hexo.training.pipeline INFO   Epoch 1: loss=2.8547 policy=2.6825 value=0.1993 entropy=2.7087
+2026-04-05 05:11:05,434 hexo.training.pipeline INFO === Round 281 ===
+2026-04-05 05:13:24,331 hexo.training.pipeline INFO   Epoch 1: loss=2.8839 policy=2.6703 value=0.2405 entropy=2.6936
+2026-04-05 05:13:24,351 hexo.training.pipeline INFO === Round 282 ===
+2026-04-05 05:15:42,407 hexo.training.pipeline INFO   Epoch 1: loss=2.8575 policy=2.6590 value=0.2254 entropy=2.6821
+2026-04-05 05:15:42,427 hexo.training.pipeline INFO === Round 283 ===
+2026-04-05 05:17:58,205 hexo.training.pipeline INFO   Epoch 1: loss=2.8559 policy=2.7043 value=0.1789 entropy=2.7245
+2026-04-05 05:17:58,224 hexo.training.pipeline INFO === Round 284 ===
+2026-04-05 05:20:10,363 hexo.training.pipeline INFO   Epoch 1: loss=2.8322 policy=2.6829 value=0.1763 entropy=2.7039
+2026-04-05 05:20:10,383 hexo.training.pipeline INFO === Round 285 ===
+2026-04-05 05:22:21,656 hexo.training.pipeline INFO   Epoch 1: loss=2.8151 policy=2.6854 value=0.1567 entropy=2.7072
+2026-04-05 05:22:21,676 hexo.training.pipeline INFO === Round 286 ===
+2026-04-05 05:24:39,350 hexo.training.pipeline INFO   Epoch 1: loss=2.7711 policy=2.6539 value=0.1439 entropy=2.6741
+2026-04-05 05:24:39,370 hexo.training.pipeline INFO === Round 287 ===
+2026-04-05 05:26:56,972 hexo.training.pipeline INFO   Epoch 1: loss=2.7743 policy=2.6684 value=0.1328 entropy=2.6901
+2026-04-05 05:26:56,992 hexo.training.pipeline INFO === Round 288 ===
+2026-04-05 05:29:21,909 hexo.training.pipeline INFO   Epoch 1: loss=2.7915 policy=2.6681 value=0.1503 entropy=2.6894
+2026-04-05 05:29:21,929 hexo.training.pipeline INFO === Round 289 ===
+2026-04-05 05:31:39,541 hexo.training.pipeline INFO   Epoch 1: loss=2.7845 policy=2.6855 value=0.1260 entropy=2.7063
+2026-04-05 05:31:39,561 hexo.training.pipeline INFO === Round 290 ===
+2026-04-05 05:33:58,706 hexo.training.pipeline INFO   Epoch 1: loss=2.7961 policy=2.7144 value=0.1090 entropy=2.7336
+2026-04-05 05:33:58,726 hexo.training.pipeline INFO === Round 291 ===
+2026-04-05 05:36:15,458 hexo.training.pipeline INFO   Epoch 1: loss=2.7520 policy=2.6726 value=0.1063 entropy=2.6944
+2026-04-05 05:36:15,478 hexo.training.pipeline INFO === Round 292 ===
+2026-04-05 05:38:22,609 hexo.training.pipeline INFO   Epoch 1: loss=2.7134 policy=2.6650 value=0.0752 entropy=2.6822
+2026-04-05 05:38:22,630 hexo.training.pipeline INFO === Round 293 ===
+2026-04-05 05:40:40,715 hexo.training.pipeline INFO   Epoch 1: loss=2.7210 policy=2.6861 value=0.0620 entropy=2.7088
+2026-04-05 05:40:40,735 hexo.training.pipeline INFO === Round 294 ===
+2026-04-05 05:42:58,144 hexo.training.pipeline INFO   Epoch 1: loss=2.6869 policy=2.6362 value=0.0773 entropy=2.6553
+2026-04-05 05:42:58,164 hexo.training.pipeline INFO === Round 295 ===
+2026-04-05 05:45:16,653 hexo.training.pipeline INFO   Epoch 1: loss=2.7407 policy=2.6488 value=0.1187 entropy=2.6703
+2026-04-05 05:45:16,673 hexo.training.pipeline INFO === Round 296 ===
+2026-04-05 05:47:31,483 hexo.training.pipeline INFO   Epoch 1: loss=2.7342 policy=2.6401 value=0.1207 entropy=2.6612
+2026-04-05 05:47:31,503 hexo.training.pipeline INFO === Round 297 ===
+2026-04-05 05:49:48,743 hexo.training.pipeline INFO   Epoch 1: loss=2.7912 policy=2.6656 value=0.1524 entropy=2.6833
+2026-04-05 05:49:48,763 hexo.training.pipeline INFO === Round 298 ===
+2026-04-05 05:51:58,929 hexo.training.pipeline INFO   Epoch 1: loss=2.7672 policy=2.6585 value=0.1355 entropy=2.6770
+2026-04-05 05:51:58,949 hexo.training.pipeline INFO === Round 299 ===
+2026-04-05 05:54:05,215 hexo.training.pipeline INFO   Epoch 1: loss=2.7514 policy=2.6665 value=0.1118 entropy=2.6850
+2026-04-05 05:54:05,235 hexo.training.pipeline INFO === Round 300 ===
+2026-04-05 05:56:23,753 hexo.training.pipeline INFO   Epoch 1: loss=2.7711 policy=2.6634 value=0.1345 entropy=2.6829
+2026-04-05 05:56:23,773 hexo.training.pipeline INFO === Round 301 ===
+2026-04-05 05:58:27,978 hexo.training.pipeline INFO   Epoch 1: loss=2.7113 policy=2.6377 value=0.1002 entropy=2.6579
+2026-04-05 05:58:27,998 hexo.training.pipeline INFO === Round 302 ===
+2026-04-05 06:00:44,274 hexo.training.pipeline INFO   Epoch 1: loss=2.7448 policy=2.6140 value=0.1572 entropy=2.6354
+2026-04-05 06:00:44,295 hexo.training.pipeline INFO === Round 303 ===
+2026-04-05 06:03:02,062 hexo.training.pipeline INFO   Epoch 1: loss=2.7414 policy=2.5938 value=0.1737 entropy=2.6137
+2026-04-05 06:03:02,082 hexo.training.pipeline INFO === Round 304 ===
+2026-04-05 06:05:20,241 hexo.training.pipeline INFO   Epoch 1: loss=2.7236 policy=2.6281 value=0.1220 entropy=2.6479
+2026-04-05 06:05:20,261 hexo.training.pipeline INFO === Round 305 ===
+2026-04-05 06:07:39,701 hexo.training.pipeline INFO   Epoch 1: loss=2.7267 policy=2.6368 value=0.1165 entropy=2.6571
+2026-04-05 06:07:39,721 hexo.training.pipeline INFO === Round 306 ===
+2026-04-05 06:10:03,433 hexo.training.pipeline INFO   Epoch 1: loss=2.7866 policy=2.6411 value=0.1721 entropy=2.6596
+2026-04-05 06:10:03,454 hexo.training.pipeline INFO === Round 307 ===
+2026-04-05 06:12:27,434 hexo.training.pipeline INFO   Epoch 1: loss=2.8270 policy=2.6767 value=0.1773 entropy=2.6973
+2026-04-05 06:12:27,454 hexo.training.pipeline INFO === Round 308 ===
+2026-04-05 06:14:46,243 hexo.training.pipeline INFO   Epoch 1: loss=2.7984 policy=2.6704 value=0.1550 entropy=2.6924
+2026-04-05 06:14:46,262 hexo.training.pipeline INFO === Round 309 ===
+2026-04-05 06:17:02,341 hexo.training.pipeline INFO   Epoch 1: loss=2.7976 policy=2.6870 value=0.1376 entropy=2.7058
+2026-04-05 06:17:02,361 hexo.training.pipeline INFO === Round 310 ===
+2026-04-05 06:19:20,127 hexo.training.pipeline INFO   Epoch 1: loss=2.7607 policy=2.6700 value=0.1177 entropy=2.6904
+2026-04-05 06:19:20,147 hexo.training.pipeline INFO === Round 311 ===
+2026-04-05 06:21:45,097 hexo.training.pipeline INFO   Epoch 1: loss=2.7445 policy=2.6605 value=0.1107 entropy=2.6789
+2026-04-05 06:21:45,118 hexo.training.pipeline INFO === Round 312 ===
+2026-04-05 06:24:01,272 hexo.training.pipeline INFO   Epoch 1: loss=2.7526 policy=2.6690 value=0.1105 entropy=2.6875
+2026-04-05 06:24:01,292 hexo.training.pipeline INFO === Round 313 ===
+2026-04-05 06:26:20,597 hexo.training.pipeline INFO   Epoch 1: loss=2.7451 policy=2.6632 value=0.1087 entropy=2.6857
+2026-04-05 06:26:20,617 hexo.training.pipeline INFO === Round 314 ===
+2026-04-05 06:28:38,276 hexo.training.pipeline INFO   Epoch 1: loss=2.6844 policy=2.6020 value=0.1086 entropy=2.6224
+2026-04-05 06:28:38,296 hexo.training.pipeline INFO === Round 315 ===
+2026-04-05 06:30:57,544 hexo.training.pipeline INFO   Epoch 1: loss=2.7357 policy=2.6422 value=0.1202 entropy=2.6647
+2026-04-05 06:30:57,563 hexo.training.pipeline INFO === Round 316 ===
+2026-04-05 06:33:15,063 hexo.training.pipeline INFO   Epoch 1: loss=2.7640 policy=2.6271 value=0.1634 entropy=2.6471
+2026-04-05 06:33:15,083 hexo.training.pipeline INFO === Round 317 ===
+2026-04-05 06:35:30,197 hexo.training.pipeline INFO   Epoch 1: loss=2.7630 policy=2.6328 value=0.1567 entropy=2.6535
+2026-04-05 06:35:30,217 hexo.training.pipeline INFO === Round 318 ===
+2026-04-05 06:37:44,259 hexo.training.pipeline INFO   Epoch 1: loss=2.7849 policy=2.6204 value=0.1909 entropy=2.6406
+2026-04-05 06:37:44,279 hexo.training.pipeline INFO === Round 319 ===
+2026-04-05 06:40:01,461 hexo.training.pipeline INFO   Epoch 1: loss=2.7233 policy=2.6103 value=0.1393 entropy=2.6306
+2026-04-05 06:40:01,480 hexo.training.pipeline INFO === Round 320 ===
+2026-04-05 06:42:18,864 hexo.training.pipeline INFO   Epoch 1: loss=2.7395 policy=2.6291 value=0.1369 entropy=2.6501
+2026-04-05 06:42:18,884 hexo.training.pipeline INFO === Round 321 ===
+2026-04-05 06:44:35,953 hexo.training.pipeline INFO   Epoch 1: loss=2.7004 policy=2.6029 value=0.1237 entropy=2.6234
+2026-04-05 06:44:35,973 hexo.training.pipeline INFO === Round 322 ===
+2026-04-05 06:46:42,154 hexo.training.pipeline INFO   Epoch 1: loss=2.7076 policy=2.6049 value=0.1289 entropy=2.6254
+2026-04-05 06:46:42,175 hexo.training.pipeline INFO === Round 323 ===
+2026-04-05 06:48:59,686 hexo.training.pipeline INFO   Epoch 1: loss=2.7288 policy=2.5862 value=0.1687 entropy=2.6069
+2026-04-05 06:48:59,705 hexo.training.pipeline INFO === Round 324 ===
+2026-04-05 06:51:30,201 hexo.training.pipeline INFO   Epoch 1: loss=2.7588 policy=2.6169 value=0.1683 entropy=2.6385
+2026-04-05 06:51:30,221 hexo.training.pipeline INFO === Round 325 ===
+2026-04-05 06:53:48,638 hexo.training.pipeline INFO   Epoch 1: loss=2.7651 policy=2.6247 value=0.1668 entropy=2.6447
+2026-04-05 06:53:48,658 hexo.training.pipeline INFO === Round 326 ===
+2026-04-05 06:56:21,718 hexo.training.pipeline INFO   Epoch 1: loss=2.7445 policy=2.6216 value=0.1493 entropy=2.6411
+2026-04-05 06:56:21,739 hexo.training.pipeline INFO === Round 327 ===
+2026-04-05 06:59:13,245 hexo.training.pipeline INFO   Epoch 1: loss=2.7499 policy=2.6173 value=0.1591 entropy=2.6389
+2026-04-05 06:59:13,265 hexo.training.pipeline INFO === Round 328 ===
+2026-04-05 07:01:31,130 hexo.training.pipeline INFO   Epoch 1: loss=2.7229 policy=2.6054 value=0.1438 entropy=2.6265
+2026-04-05 07:01:31,150 hexo.training.pipeline INFO === Round 329 ===
+2026-04-05 07:03:36,653 hexo.training.pipeline INFO   Epoch 1: loss=2.7647 policy=2.6494 value=0.1420 entropy=2.6738
+2026-04-05 07:03:36,673 hexo.training.pipeline INFO === Round 330 ===
+2026-04-05 07:05:51,948 hexo.training.pipeline INFO   Epoch 1: loss=2.7523 policy=2.6063 value=0.1724 entropy=2.6294
+2026-04-05 07:05:51,968 hexo.training.pipeline INFO === Round 331 ===
+2026-04-05 07:08:08,481 hexo.training.pipeline INFO   Epoch 1: loss=2.7618 policy=2.6564 value=0.1322 entropy=2.6763
+2026-04-05 07:08:08,501 hexo.training.pipeline INFO === Round 332 ===
+2026-04-05 07:10:27,267 hexo.training.pipeline INFO   Epoch 1: loss=2.8408 policy=2.6730 value=0.1947 entropy=2.6936
+2026-04-05 07:10:27,287 hexo.training.pipeline INFO === Round 333 ===
+2026-04-05 07:12:42,838 hexo.training.pipeline INFO   Epoch 1: loss=2.8042 policy=2.6561 value=0.1749 entropy=2.6776
+2026-04-05 07:12:42,857 hexo.training.pipeline INFO === Round 334 ===
+2026-04-05 07:15:00,202 hexo.training.pipeline INFO   Epoch 1: loss=2.7623 policy=2.6584 value=0.1307 entropy=2.6790
+2026-04-05 07:15:00,222 hexo.training.pipeline INFO === Round 335 ===
+2026-04-05 07:17:18,636 hexo.training.pipeline INFO   Epoch 1: loss=2.7295 policy=2.6464 value=0.1097 entropy=2.6630
+2026-04-05 07:17:18,656 hexo.training.pipeline INFO === Round 336 ===
+2026-04-05 07:19:33,455 hexo.training.pipeline INFO   Epoch 1: loss=2.7778 policy=2.6784 value=0.1264 entropy=2.7003
+2026-04-05 07:19:33,474 hexo.training.pipeline INFO === Round 337 ===
+2026-04-05 07:21:50,301 hexo.training.pipeline INFO   Epoch 1: loss=2.7906 policy=2.6674 value=0.1502 entropy=2.6911
+2026-04-05 07:21:50,321 hexo.training.pipeline INFO === Round 338 ===
+2026-04-05 07:23:56,057 hexo.training.pipeline INFO   Epoch 1: loss=2.7472 policy=2.6498 value=0.1241 entropy=2.6710
+2026-04-05 07:23:56,077 hexo.training.pipeline INFO === Round 339 ===
+2026-04-05 07:26:13,073 hexo.training.pipeline INFO   Epoch 1: loss=2.8101 policy=2.6351 value=0.2015 entropy=2.6545
+2026-04-05 07:26:13,093 hexo.training.pipeline INFO === Round 340 ===
+2026-04-05 07:28:19,236 hexo.training.pipeline INFO   Epoch 1: loss=2.7984 policy=2.6598 value=0.1654 entropy=2.6828
+2026-04-05 07:28:19,256 hexo.training.pipeline INFO === Round 341 ===
+2026-04-05 07:30:37,080 hexo.training.pipeline INFO   Epoch 1: loss=2.7977 policy=2.6744 value=0.1503 entropy=2.6964
+2026-04-05 07:30:37,100 hexo.training.pipeline INFO === Round 342 ===
+2026-04-05 07:32:53,988 hexo.training.pipeline INFO   Epoch 1: loss=2.7429 policy=2.6574 value=0.1123 entropy=2.6806
+2026-04-05 07:32:54,008 hexo.training.pipeline INFO === Round 343 ===
+2026-04-05 07:35:09,129 hexo.training.pipeline INFO   Epoch 1: loss=2.7815 policy=2.7109 value=0.0979 entropy=2.7312
+2026-04-05 07:35:09,150 hexo.training.pipeline INFO === Round 344 ===
+2026-04-05 07:37:25,812 hexo.training.pipeline INFO   Epoch 1: loss=2.7398 policy=2.6926 value=0.0743 entropy=2.7110
+2026-04-05 07:37:25,832 hexo.training.pipeline INFO === Round 345 ===
+2026-04-05 07:39:39,383 hexo.training.pipeline INFO   Epoch 1: loss=2.7802 policy=2.6770 value=0.1302 entropy=2.6992
+2026-04-05 07:39:39,403 hexo.training.pipeline INFO === Round 346 ===
+2026-04-05 07:41:57,517 hexo.training.pipeline INFO   Epoch 1: loss=2.7953 policy=2.6736 value=0.1486 entropy=2.6956
+2026-04-05 07:41:57,536 hexo.training.pipeline INFO === Round 347 ===
+2026-04-05 07:44:13,078 hexo.training.pipeline INFO   Epoch 1: loss=2.7903 policy=2.6683 value=0.1489 entropy=2.6903
+2026-04-05 07:44:13,098 hexo.training.pipeline INFO === Round 348 ===
+2026-04-05 07:46:30,482 hexo.training.pipeline INFO   Epoch 1: loss=2.7437 policy=2.6445 value=0.1258 entropy=2.6633
+2026-04-05 07:46:30,502 hexo.training.pipeline INFO === Round 349 ===
+2026-04-05 07:48:36,517 hexo.training.pipeline INFO   Epoch 1: loss=2.6902 policy=2.6225 value=0.0941 entropy=2.6431
+2026-04-05 07:48:36,537 hexo.training.pipeline INFO === Round 350 ===
+2026-04-05 07:50:51,922 hexo.training.pipeline INFO   Epoch 1: loss=2.7342 policy=2.6508 value=0.1101 entropy=2.6695
+2026-04-05 07:50:51,942 hexo.training.pipeline INFO === Round 351 ===
+2026-04-05 07:53:07,901 hexo.training.pipeline INFO   Epoch 1: loss=2.7266 policy=2.6421 value=0.1111 entropy=2.6626
+2026-04-05 07:53:07,921 hexo.training.pipeline INFO === Round 352 ===
+2026-04-05 07:55:23,956 hexo.training.pipeline INFO   Epoch 1: loss=2.7062 policy=2.6560 value=0.0770 entropy=2.6752
+2026-04-05 07:55:23,975 hexo.training.pipeline INFO === Round 353 ===
+2026-04-05 07:57:40,337 hexo.training.pipeline INFO   Epoch 1: loss=2.7434 policy=2.6425 value=0.1275 entropy=2.6627
+2026-04-05 07:57:40,357 hexo.training.pipeline INFO === Round 354 ===
+2026-04-05 07:59:57,632 hexo.training.pipeline INFO   Epoch 1: loss=2.7640 policy=2.6612 value=0.1296 entropy=2.6810
+2026-04-05 07:59:57,652 hexo.training.pipeline INFO === Round 355 ===
+2026-04-05 08:02:15,010 hexo.training.pipeline INFO   Epoch 1: loss=2.7377 policy=2.6381 value=0.1262 entropy=2.6600
+2026-04-05 08:02:15,030 hexo.training.pipeline INFO === Round 356 ===
+2026-04-05 08:04:30,668 hexo.training.pipeline INFO   Epoch 1: loss=2.7135 policy=2.6417 value=0.0984 entropy=2.6634
+2026-04-05 08:04:30,688 hexo.training.pipeline INFO === Round 357 ===
+2026-04-05 08:06:48,696 hexo.training.pipeline INFO   Epoch 1: loss=2.7425 policy=2.6627 value=0.1066 entropy=2.6817
+2026-04-05 08:06:48,716 hexo.training.pipeline INFO === Round 358 ===
+2026-04-05 08:09:05,203 hexo.training.pipeline INFO   Epoch 1: loss=2.6911 policy=2.6448 value=0.0729 entropy=2.6647
+2026-04-05 08:09:05,223 hexo.training.pipeline INFO === Round 359 ===
+2026-04-05 08:11:23,414 hexo.training.pipeline INFO   Epoch 1: loss=2.7074 policy=2.6504 value=0.0836 entropy=2.6693
+2026-04-05 08:11:23,434 hexo.training.pipeline INFO === Round 360 ===
+2026-04-05 08:13:38,992 hexo.training.pipeline INFO   Epoch 1: loss=2.7239 policy=2.6170 value=0.1333 entropy=2.6370
+2026-04-05 08:13:39,012 hexo.training.pipeline INFO === Round 361 ===
+2026-04-05 08:15:44,394 hexo.training.pipeline INFO   Epoch 1: loss=2.7037 policy=2.6213 value=0.1088 entropy=2.6394
+2026-04-05 08:15:44,414 hexo.training.pipeline INFO === Round 362 ===
+2026-04-05 08:17:50,578 hexo.training.pipeline INFO   Epoch 1: loss=2.6909 policy=2.6124 value=0.1048 entropy=2.6306
+2026-04-05 08:17:50,597 hexo.training.pipeline INFO === Round 363 ===
+2026-04-05 08:19:56,553 hexo.training.pipeline INFO   Epoch 1: loss=2.7073 policy=2.6306 value=0.1031 entropy=2.6500
+2026-04-05 08:19:56,573 hexo.training.pipeline INFO === Round 364 ===
+2026-04-05 08:22:10,376 hexo.training.pipeline INFO   Epoch 1: loss=2.6941 policy=2.6252 value=0.0954 entropy=2.6445
+2026-04-05 08:22:10,396 hexo.training.pipeline INFO === Round 365 ===
+2026-04-05 08:24:22,349 hexo.training.pipeline INFO   Epoch 1: loss=2.7178 policy=2.6237 value=0.1206 entropy=2.6415
+2026-04-05 08:24:22,369 hexo.training.pipeline INFO === Round 366 ===
+2026-04-05 08:26:33,510 hexo.training.pipeline INFO   Epoch 1: loss=2.6994 policy=2.6194 value=0.1064 entropy=2.6397
+2026-04-05 08:26:33,530 hexo.training.pipeline INFO === Round 367 ===
+2026-04-05 08:28:48,338 hexo.training.pipeline INFO   Epoch 1: loss=2.6756 policy=2.6080 value=0.0939 entropy=2.6273
+2026-04-05 08:28:48,357 hexo.training.pipeline INFO === Round 368 ===
+2026-04-05 08:31:00,701 hexo.training.pipeline INFO   Epoch 1: loss=2.6594 policy=2.6130 value=0.0727 entropy=2.6323
+2026-04-05 08:31:00,720 hexo.training.pipeline INFO === Round 369 ===
+2026-04-05 08:33:16,995 hexo.training.pipeline INFO   Epoch 1: loss=2.6371 policy=2.5913 value=0.0719 entropy=2.6113
+2026-04-05 08:33:17,014 hexo.training.pipeline INFO === Round 370 ===
+2026-04-05 08:35:32,087 hexo.training.pipeline INFO   Epoch 1: loss=2.6514 policy=2.6278 value=0.0501 entropy=2.6465
+2026-04-05 08:35:32,107 hexo.training.pipeline INFO === Round 371 ===
+2026-04-05 08:37:45,446 hexo.training.pipeline INFO   Epoch 1: loss=2.6719 policy=2.5897 value=0.1084 entropy=2.6106
+2026-04-05 08:37:45,465 hexo.training.pipeline INFO === Round 372 ===
+2026-04-05 08:39:37,937 hexo.training.pipeline INFO   Epoch 1: loss=2.6499 policy=2.5758 value=0.1001 entropy=2.5977
+2026-04-05 08:39:37,957 hexo.training.pipeline INFO === Round 373 ===
+2026-04-05 08:41:41,579 hexo.training.pipeline INFO   Epoch 1: loss=2.6324 policy=2.5745 value=0.0839 entropy=2.5961
+2026-04-05 08:41:41,598 hexo.training.pipeline INFO === Round 374 ===
+2026-04-05 08:43:59,790 hexo.training.pipeline INFO   Epoch 1: loss=2.7435 policy=2.5704 value=0.1991 entropy=2.5906
+2026-04-05 08:43:59,809 hexo.training.pipeline INFO === Round 375 ===
+2026-04-05 08:46:10,913 hexo.training.pipeline INFO   Epoch 1: loss=2.7021 policy=2.5569 value=0.1709 entropy=2.5773
+2026-04-05 08:46:10,934 hexo.training.pipeline INFO === Round 376 ===
+2026-04-05 08:48:29,107 hexo.training.pipeline INFO   Epoch 1: loss=2.7363 policy=2.5715 value=0.1907 entropy=2.5934
+2026-04-05 08:48:29,127 hexo.training.pipeline INFO === Round 377 ===
+2026-04-05 08:50:54,265 hexo.training.pipeline INFO   Epoch 1: loss=2.7103 policy=2.5755 value=0.1608 entropy=2.5948
+2026-04-05 08:50:54,285 hexo.training.pipeline INFO === Round 378 ===
+2026-04-05 08:53:10,826 hexo.training.pipeline INFO   Epoch 1: loss=2.6742 policy=2.5593 value=0.1407 entropy=2.5777
+2026-04-05 08:53:10,845 hexo.training.pipeline INFO === Round 379 ===
+2026-04-05 08:55:25,555 hexo.training.pipeline INFO   Epoch 1: loss=2.6656 policy=2.5731 value=0.1184 entropy=2.5915
+2026-04-05 08:55:25,575 hexo.training.pipeline INFO === Round 380 ===
+2026-04-05 08:57:31,683 hexo.training.pipeline INFO   Epoch 1: loss=2.6661 policy=2.5755 value=0.1165 entropy=2.5942
+2026-04-05 08:57:31,703 hexo.training.pipeline INFO === Round 381 ===
+2026-04-05 08:59:46,011 hexo.training.pipeline INFO   Epoch 1: loss=2.6814 policy=2.6005 value=0.1071 entropy=2.6222
+2026-04-05 08:59:46,031 hexo.training.pipeline INFO === Round 382 ===
+2026-04-05 09:02:02,921 hexo.training.pipeline INFO   Epoch 1: loss=2.6693 policy=2.5871 value=0.1082 entropy=2.6064
+2026-04-05 09:02:02,941 hexo.training.pipeline INFO === Round 383 ===
+2026-04-05 09:04:15,050 hexo.training.pipeline INFO   Epoch 1: loss=2.7089 policy=2.6205 value=0.1148 entropy=2.6400
+2026-04-05 09:04:15,070 hexo.training.pipeline INFO === Round 384 ===
+2026-04-05 09:06:31,140 hexo.training.pipeline INFO   Epoch 1: loss=2.7069 policy=2.6186 value=0.1147 entropy=2.6385
+2026-04-05 09:06:31,160 hexo.training.pipeline INFO === Round 385 ===
+2026-04-05 09:08:46,960 hexo.training.pipeline INFO   Epoch 1: loss=2.6775 policy=2.6240 value=0.0800 entropy=2.6443
+2026-04-05 09:08:46,980 hexo.training.pipeline INFO === Round 386 ===
+2026-04-05 09:11:02,670 hexo.training.pipeline INFO   Epoch 1: loss=2.6446 policy=2.5941 value=0.0767 entropy=2.6162
+2026-04-05 09:11:02,690 hexo.training.pipeline INFO === Round 387 ===
+2026-04-05 09:13:18,727 hexo.training.pipeline INFO   Epoch 1: loss=2.6204 policy=2.5835 value=0.0629 entropy=2.6036
+2026-04-05 09:13:18,747 hexo.training.pipeline INFO === Round 388 ===
+2026-04-05 09:15:20,569 hexo.training.pipeline INFO   Epoch 1: loss=2.6333 policy=2.5786 value=0.0807 entropy=2.5975
+2026-04-05 09:15:20,589 hexo.training.pipeline INFO === Round 389 ===
+2026-04-05 09:17:34,779 hexo.training.pipeline INFO   Epoch 1: loss=2.6448 policy=2.5811 value=0.0897 entropy=2.5991
+2026-04-05 09:17:34,799 hexo.training.pipeline INFO === Round 390 ===
+2026-04-05 09:19:48,125 hexo.training.pipeline INFO   Epoch 1: loss=2.6504 policy=2.5911 value=0.0854 entropy=2.6115
+2026-04-05 09:19:48,145 hexo.training.pipeline INFO === Round 391 ===
+2026-04-05 09:22:04,067 hexo.training.pipeline INFO   Epoch 1: loss=2.6758 policy=2.5990 value=0.1030 entropy=2.6188
+2026-04-05 09:22:04,087 hexo.training.pipeline INFO === Round 392 ===
+2026-04-05 09:24:21,242 hexo.training.pipeline INFO   Epoch 1: loss=2.7197 policy=2.5854 value=0.1604 entropy=2.6049
+2026-04-05 09:24:21,262 hexo.training.pipeline INFO === Round 393 ===
+2026-04-05 09:26:38,977 hexo.training.pipeline INFO   Epoch 1: loss=2.6747 policy=2.5734 value=0.1272 entropy=2.5951
+2026-04-05 09:26:38,997 hexo.training.pipeline INFO === Round 394 ===
+2026-04-05 09:28:43,038 hexo.training.pipeline INFO   Epoch 1: loss=2.6927 policy=2.5608 value=0.1577 entropy=2.5807
+2026-04-05 09:28:43,058 hexo.training.pipeline INFO === Round 395 ===
+2026-04-05 09:30:47,660 hexo.training.pipeline INFO   Epoch 1: loss=2.6890 policy=2.5618 value=0.1530 entropy=2.5829
+2026-04-05 09:30:47,679 hexo.training.pipeline INFO === Round 396 ===
+2026-04-05 09:33:03,300 hexo.training.pipeline INFO   Epoch 1: loss=2.6682 policy=2.5737 value=0.1204 entropy=2.5929
+2026-04-05 09:33:03,320 hexo.training.pipeline INFO === Round 397 ===
+2026-04-05 09:35:07,668 hexo.training.pipeline INFO   Epoch 1: loss=2.6512 policy=2.5777 value=0.0995 entropy=2.5983
+2026-04-05 09:35:07,687 hexo.training.pipeline INFO === Round 398 ===
+2026-04-05 09:37:25,405 hexo.training.pipeline INFO   Epoch 1: loss=2.6326 policy=2.5590 value=0.0994 entropy=2.5785
+2026-04-05 09:37:25,424 hexo.training.pipeline INFO === Round 399 ===
+2026-04-05 09:39:42,883 hexo.training.pipeline INFO   Epoch 1: loss=2.6706 policy=2.5745 value=0.1220 entropy=2.5953
+2026-04-05 09:39:42,903 __main__ INFO DONE: 26890s (448.2min)

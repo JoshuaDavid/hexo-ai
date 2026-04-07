@@ -1,0 +1,26 @@
+2026-04-04 23:41:53,453 __main__ INFO ITERATION 0
+2026-04-04 23:43:05,990 __main__ INFO Endgame: +144 examples (total=144) in 19s
+2026-04-04 23:43:21,276 __main__ INFO ITERATION 1
+2026-04-04 23:44:16,590 __main__ INFO Endgame: +124 examples (total=268) in 16s
+2026-04-04 23:46:00,753 __main__ INFO EVAL: MCTS 0 - 6 MM (0 draws)
+2026-04-04 23:46:00,753 __main__ INFO ITERATION 2
+2026-04-04 23:47:17,659 __main__ INFO Endgame: +44 examples (total=312) in 6s
+2026-04-04 23:47:31,729 __main__ INFO ITERATION 3
+2026-04-04 23:48:14,560 __main__ INFO Endgame: +64 examples (total=376) in 8s
+2026-04-04 23:49:24,981 __main__ INFO EVAL: MCTS 0 - 6 MM (0 draws)
+2026-04-04 23:49:24,981 __main__ INFO ITERATION 4
+2026-04-04 23:50:27,124 __main__ INFO Endgame: +128 examples (total=504) in 17s
+2026-04-04 23:50:38,839 __main__ INFO ITERATION 5
+2026-04-04 23:51:24,595 __main__ INFO Endgame: +68 examples (total=572) in 10s
+2026-04-04 23:52:52,775 __main__ INFO EVAL: MCTS 0 - 6 MM (0 draws)
+2026-04-04 23:52:52,775 __main__ INFO ITERATION 6
+2026-04-04 23:53:49,280 __main__ INFO Endgame: +124 examples (total=696) in 17s
+2026-04-04 23:54:03,341 __main__ INFO ITERATION 7
+2026-04-04 23:54:47,493 __main__ INFO Endgame: +0 examples (total=696) in 0s
+2026-04-04 23:56:02,503 __main__ INFO EVAL: MCTS 0 - 3 MM (3 draws)
+2026-04-04 23:56:02,503 __main__ INFO ITERATION 8
+2026-04-04 23:56:46,768 __main__ INFO Endgame: +100 examples (total=796) in 13s
+2026-04-04 23:57:01,880 __main__ INFO ITERATION 9
+2026-04-04 23:57:45,163 __main__ INFO Endgame: +72 examples (total=868) in 10s
+2026-04-04 23:59:12,149 __main__ INFO EVAL: MCTS 0 - 6 MM (0 draws)
+=== DONE ===

@@ -1,0 +1,401 @@
+2026-04-04 10:06:48,520 hexo.training.pipeline INFO === Round 0 ===
+2026-04-04 10:08:34,577 hexo.training.self_play INFO Games: A=8 B=14 draws=42 draw_rate=0.66
+2026-04-04 10:08:34,584 hexo.training.pipeline INFO Generated 8936 examples (64 games, draw_rate=0.66)
+2026-04-04 10:08:39,776 hexo.training.pipeline INFO   Epoch 1: loss=6.1192 policy=5.8837 value=0.2944 entropy=5.8895
+2026-04-04 10:08:39,783 hexo.training.pipeline INFO === Round 1 ===
+2026-04-04 10:09:19,889 hexo.training.self_play INFO Games: A=13 B=19 draws=0 draw_rate=0.00
+2026-04-04 10:09:19,897 hexo.training.pipeline INFO Generated 2426 examples (32 games, draw_rate=0.00)
+2026-04-04 10:09:26,270 hexo.training.pipeline INFO   Epoch 1: loss=6.0322 policy=5.5969 value=0.4914 entropy=5.6058
+2026-04-04 10:09:26,277 hexo.training.pipeline INFO === Round 2 ===
+2026-04-04 10:10:10,432 hexo.training.self_play INFO Games: A=15 B=17 draws=0 draw_rate=0.00
+2026-04-04 10:10:10,441 hexo.training.pipeline INFO Generated 2150 examples (32 games, draw_rate=0.00)
+2026-04-04 10:10:18,073 hexo.training.pipeline INFO   Epoch 1: loss=5.9030 policy=5.3436 value=0.6129 entropy=5.3507
+2026-04-04 10:10:18,080 hexo.training.pipeline INFO === Round 3 ===
+2026-04-04 10:11:01,972 hexo.training.self_play INFO Games: A=17 B=15 draws=0 draw_rate=0.00
+2026-04-04 10:11:01,980 hexo.training.pipeline INFO Generated 2094 examples (32 games, draw_rate=0.00)
+2026-04-04 10:11:10,878 hexo.training.pipeline INFO   Epoch 1: loss=5.7771 policy=5.1244 value=0.7040 entropy=5.1328
+2026-04-04 10:11:10,885 hexo.training.pipeline INFO === Round 4 ===
+2026-04-04 10:12:02,088 hexo.training.self_play INFO Games: A=14 B=18 draws=0 draw_rate=0.00
+2026-04-04 10:12:02,099 hexo.training.pipeline INFO Generated 2106 examples (32 games, draw_rate=0.00)
+2026-04-04 10:12:12,122 hexo.training.pipeline INFO   Epoch 1: loss=5.6472 policy=4.9208 value=0.7757 entropy=4.9306
+2026-04-04 10:12:12,129 hexo.training.pipeline INFO === Round 5 ===
+2026-04-04 10:13:01,082 hexo.training.self_play INFO Games: A=19 B=13 draws=0 draw_rate=0.00
+2026-04-04 10:13:01,091 hexo.training.pipeline INFO Generated 2412 examples (32 games, draw_rate=0.00)
+2026-04-04 10:13:12,470 hexo.training.pipeline INFO   Epoch 1: loss=5.4763 policy=4.6925 value=0.8309 entropy=4.7044
+2026-04-04 10:13:12,477 hexo.training.pipeline INFO === Round 6 ===
+2026-04-04 10:14:04,568 hexo.training.self_play INFO Games: A=11 B=11 draws=14 draw_rate=0.39
+2026-04-04 10:14:04,574 hexo.training.pipeline INFO Generated 3856 examples (32 games, draw_rate=0.39)
+2026-04-04 10:14:17,994 hexo.training.pipeline INFO   Epoch 1: loss=5.0413 policy=4.4227 value=0.6630 entropy=4.4368
+2026-04-04 10:14:18,001 hexo.training.pipeline INFO === Round 7 ===
+2026-04-04 10:15:10,296 hexo.training.self_play INFO Games: A=6 B=9 draws=18 draw_rate=0.55
+2026-04-04 10:15:10,303 hexo.training.pipeline INFO Generated 4060 examples (32 games, draw_rate=0.55)
+2026-04-04 10:15:25,766 hexo.training.pipeline INFO   Epoch 1: loss=4.6757 policy=4.1781 value=0.5395 entropy=4.1938
+2026-04-04 10:15:25,773 hexo.training.pipeline INFO === Round 8 ===
+2026-04-04 10:16:16,770 hexo.training.self_play INFO Games: A=10 B=10 draws=17 draw_rate=0.46
+2026-04-04 10:16:16,777 hexo.training.pipeline INFO Generated 3865 examples (32 games, draw_rate=0.46)
+2026-04-04 10:16:34,512 hexo.training.pipeline INFO   Epoch 1: loss=4.4565 policy=4.0498 value=0.4473 entropy=4.0660
+2026-04-04 10:16:34,519 hexo.training.pipeline INFO === Round 9 ===
+2026-04-04 10:17:26,179 hexo.training.self_play INFO Games: A=7 B=8 draws=21 draw_rate=0.58
+2026-04-04 10:17:26,185 hexo.training.pipeline INFO Generated 3886 examples (32 games, draw_rate=0.58)
+2026-04-04 10:17:45,612 hexo.training.pipeline INFO   Epoch 1: loss=4.1159 policy=3.8059 value=0.3483 entropy=3.8256
+2026-04-04 10:17:45,619 hexo.training.pipeline INFO === Round 10 ===
+2026-04-04 10:18:37,367 hexo.training.self_play INFO Games: A=10 B=3 draws=20 draw_rate=0.61
+2026-04-04 10:18:37,374 hexo.training.pipeline INFO Generated 3824 examples (32 games, draw_rate=0.61)
+2026-04-04 10:18:58,663 hexo.training.pipeline INFO   Epoch 1: loss=3.8287 policy=3.5704 value=0.2942 entropy=3.5913
+2026-04-04 10:18:58,670 hexo.training.pipeline INFO === Round 11 ===
+2026-04-04 10:19:51,477 hexo.training.self_play INFO Games: A=5 B=3 draws=27 draw_rate=0.77
+2026-04-04 10:19:51,483 hexo.training.pipeline INFO Generated 4393 examples (32 games, draw_rate=0.77)
+2026-04-04 10:20:14,960 hexo.training.pipeline INFO   Epoch 1: loss=3.5058 policy=3.3179 value=0.2213 entropy=3.3418
+2026-04-04 10:20:14,967 hexo.training.pipeline INFO === Round 12 ===
+2026-04-04 10:21:06,617 hexo.training.self_play INFO Games: A=10 B=8 draws=18 draw_rate=0.50
+2026-04-04 10:21:06,624 hexo.training.pipeline INFO Generated 3776 examples (32 games, draw_rate=0.50)
+2026-04-04 10:21:32,003 hexo.training.pipeline INFO   Epoch 1: loss=3.3914 policy=3.2165 value=0.2073 entropy=3.2414
+2026-04-04 10:21:32,010 hexo.training.pipeline INFO === Round 13 ===
+2026-04-04 10:22:25,102 hexo.training.self_play INFO Games: A=3 B=4 draws=26 draw_rate=0.79
+2026-04-04 10:22:25,109 hexo.training.pipeline INFO Generated 4251 examples (32 games, draw_rate=0.79)
+2026-04-04 10:22:52,823 hexo.training.pipeline INFO   Epoch 1: loss=3.1577 policy=3.0259 value=0.1623 entropy=3.0526
+2026-04-04 10:22:52,830 hexo.training.pipeline INFO === Round 14 ===
+2026-04-04 10:23:44,549 hexo.training.self_play INFO Games: A=8 B=6 draws=21 draw_rate=0.60
+2026-04-04 10:23:44,556 hexo.training.pipeline INFO Generated 3797 examples (32 games, draw_rate=0.60)
+2026-04-04 10:24:13,717 hexo.training.pipeline INFO   Epoch 1: loss=3.0493 policy=2.9339 value=0.1450 entropy=2.9603
+2026-04-04 10:24:13,724 hexo.training.pipeline INFO === Round 15 ===
+2026-04-04 10:25:05,761 hexo.training.self_play INFO Games: A=9 B=9 draws=17 draw_rate=0.49
+2026-04-04 10:25:05,768 hexo.training.pipeline INFO Generated 3501 examples (32 games, draw_rate=0.49)
+2026-04-04 10:25:36,701 hexo.training.pipeline INFO   Epoch 1: loss=2.9813 policy=2.8725 value=0.1377 entropy=2.8998
+2026-04-04 10:25:36,708 hexo.training.pipeline INFO === Round 16 ===
+2026-04-04 10:26:28,965 hexo.training.self_play INFO Games: A=2 B=5 draws=25 draw_rate=0.78
+2026-04-04 10:26:28,970 hexo.training.pipeline INFO Generated 4128 examples (32 games, draw_rate=0.78)
+2026-04-04 10:27:01,735 hexo.training.pipeline INFO   Epoch 1: loss=2.8348 policy=2.7485 value=0.1141 entropy=2.7762
+2026-04-04 10:27:01,742 hexo.training.pipeline INFO === Round 17 ===
+2026-04-04 10:27:53,612 hexo.training.self_play INFO Games: A=5 B=9 draws=24 draw_rate=0.63
+2026-04-04 10:27:53,619 hexo.training.pipeline INFO Generated 4106 examples (32 games, draw_rate=0.63)
+2026-04-04 10:28:28,517 hexo.training.pipeline INFO   Epoch 1: loss=2.7038 policy=2.6316 value=0.0988 entropy=2.6600
+2026-04-04 10:28:28,524 hexo.training.pipeline INFO === Round 18 ===
+2026-04-04 10:29:20,129 hexo.training.self_play INFO Games: A=16 B=12 draws=14 draw_rate=0.33
+2026-04-04 10:29:20,137 hexo.training.pipeline INFO Generated 3043 examples (32 games, draw_rate=0.33)
+2026-04-04 10:29:56,482 hexo.training.pipeline INFO   Epoch 1: loss=2.6873 policy=2.6048 value=0.1088 entropy=2.6321
+2026-04-04 10:29:56,489 hexo.training.pipeline INFO === Round 19 ===
+2026-04-04 10:30:49,335 hexo.training.self_play INFO Games: A=12 B=7 draws=17 draw_rate=0.47
+2026-04-04 10:30:49,342 hexo.training.pipeline INFO Generated 3478 examples (32 games, draw_rate=0.47)
+2026-04-04 10:31:27,362 hexo.training.pipeline INFO   Epoch 1: loss=2.6006 policy=2.5124 value=0.1136 entropy=2.5400
+2026-04-04 10:31:27,369 hexo.training.pipeline INFO === Round 20 ===
+2026-04-04 10:32:19,682 hexo.training.self_play INFO Games: A=12 B=11 draws=19 draw_rate=0.45
+2026-04-04 10:32:19,689 hexo.training.pipeline INFO Generated 3680 examples (32 games, draw_rate=0.45)
+2026-04-04 10:32:54,874 hexo.training.pipeline INFO   Epoch 1: loss=2.5343 policy=2.4477 value=0.1114 entropy=2.4745
+2026-04-04 10:32:54,881 hexo.training.pipeline INFO === Round 21 ===
+2026-04-04 10:33:23,964 hexo.training.self_play INFO Games: A=14 B=18 draws=0 draw_rate=0.00
+2026-04-04 10:33:23,970 hexo.training.pipeline INFO Generated 1341 examples (32 games, draw_rate=0.00)
+2026-04-04 10:33:58,846 hexo.training.pipeline INFO   Epoch 1: loss=2.6016 policy=2.4757 value=0.1510 entropy=2.5013
+2026-04-04 10:33:58,853 hexo.training.pipeline INFO === Round 22 ===
+2026-04-04 10:34:38,682 hexo.training.self_play INFO Games: A=16 B=16 draws=0 draw_rate=0.00
+2026-04-04 10:34:38,689 hexo.training.pipeline INFO Generated 1230 examples (32 games, draw_rate=0.00)
+2026-04-04 10:35:13,256 hexo.training.pipeline INFO   Epoch 1: loss=2.6432 policy=2.4981 value=0.1704 entropy=2.5226
+2026-04-04 10:35:13,266 hexo.training.pipeline INFO === Round 23 ===
+2026-04-04 10:35:36,904 hexo.training.self_play INFO Games: A=11 B=21 draws=0 draw_rate=0.00
+2026-04-04 10:35:36,910 hexo.training.pipeline INFO Generated 1144 examples (32 games, draw_rate=0.00)
+2026-04-04 10:36:13,242 hexo.training.pipeline INFO   Epoch 1: loss=2.7011 policy=2.5261 value=0.2005 entropy=2.5494
+2026-04-04 10:36:13,249 hexo.training.pipeline INFO === Round 24 ===
+2026-04-04 10:36:35,026 hexo.training.self_play INFO Games: A=19 B=13 draws=0 draw_rate=0.00
+2026-04-04 10:36:35,037 hexo.training.pipeline INFO Generated 923 examples (32 games, draw_rate=0.00)
+2026-04-04 10:37:09,557 hexo.training.pipeline INFO   Epoch 1: loss=2.7121 policy=2.5388 value=0.1989 entropy=2.5612
+2026-04-04 10:37:09,564 hexo.training.pipeline INFO === Round 25 ===
+2026-04-04 10:37:26,884 hexo.training.self_play INFO Games: A=17 B=15 draws=0 draw_rate=0.00
+2026-04-04 10:37:26,890 hexo.training.pipeline INFO Generated 831 examples (32 games, draw_rate=0.00)
+2026-04-04 10:37:59,952 hexo.training.pipeline INFO   Epoch 1: loss=2.7368 policy=2.5427 value=0.2197 entropy=2.5655
+2026-04-04 10:37:59,959 hexo.training.pipeline INFO === Round 26 ===
+2026-04-04 10:38:15,854 hexo.training.self_play INFO Games: A=19 B=13 draws=0 draw_rate=0.00
+2026-04-04 10:38:15,860 hexo.training.pipeline INFO Generated 813 examples (32 games, draw_rate=0.00)
+2026-04-04 10:38:47,616 hexo.training.pipeline INFO   Epoch 1: loss=2.7758 policy=2.5530 value=0.2485 entropy=2.5751
+2026-04-04 10:38:47,626 hexo.training.pipeline INFO === Round 27 ===
+2026-04-04 10:39:03,268 hexo.training.self_play INFO Games: A=15 B=17 draws=0 draw_rate=0.00
+2026-04-04 10:39:03,274 hexo.training.pipeline INFO Generated 831 examples (32 games, draw_rate=0.00)
+2026-04-04 10:39:33,644 hexo.training.pipeline INFO   Epoch 1: loss=2.8185 policy=2.5694 value=0.2751 entropy=2.5908
+2026-04-04 10:39:33,651 hexo.training.pipeline INFO === Round 28 ===
+2026-04-04 10:39:45,557 hexo.training.self_play INFO Games: A=19 B=13 draws=0 draw_rate=0.00
+2026-04-04 10:39:45,562 hexo.training.pipeline INFO Generated 643 examples (32 games, draw_rate=0.00)
+2026-04-04 10:40:14,080 hexo.training.pipeline INFO   Epoch 1: loss=2.8637 policy=2.5785 value=0.3113 entropy=2.5994
+2026-04-04 10:40:14,087 hexo.training.pipeline INFO === Round 29 ===
+2026-04-04 10:40:26,706 hexo.training.self_play INFO Games: A=16 B=18 draws=0 draw_rate=0.00
+2026-04-04 10:40:26,711 hexo.training.pipeline INFO Generated 728 examples (32 games, draw_rate=0.00)
+2026-04-04 10:40:54,190 hexo.training.pipeline INFO   Epoch 1: loss=2.8751 policy=2.5612 value=0.3397 entropy=2.5827
+2026-04-04 10:40:54,198 hexo.training.pipeline INFO === Round 30 ===
+2026-04-04 10:41:07,050 hexo.training.self_play INFO Games: A=13 B=19 draws=0 draw_rate=0.00
+2026-04-04 10:41:07,056 hexo.training.pipeline INFO Generated 636 examples (32 games, draw_rate=0.00)
+2026-04-04 10:41:32,565 hexo.training.pipeline INFO   Epoch 1: loss=2.8470 policy=2.5643 value=0.3085 entropy=2.5840
+2026-04-04 10:41:32,573 hexo.training.pipeline INFO === Round 31 ===
+2026-04-04 10:41:44,771 hexo.training.self_play INFO Games: A=4 B=29 draws=0 draw_rate=0.00
+2026-04-04 10:41:44,776 hexo.training.pipeline INFO Generated 587 examples (32 games, draw_rate=0.00)
+2026-04-04 10:42:08,499 hexo.training.pipeline INFO   Epoch 1: loss=2.8242 policy=2.5804 value=0.2698 entropy=2.5995
+2026-04-04 10:42:08,507 hexo.training.pipeline INFO === Round 32 ===
+2026-04-04 10:42:20,105 hexo.training.self_play INFO Games: A=6 B=27 draws=0 draw_rate=0.00
+2026-04-04 10:42:20,109 hexo.training.pipeline INFO Generated 643 examples (32 games, draw_rate=0.00)
+2026-04-04 10:42:42,470 hexo.training.pipeline INFO   Epoch 1: loss=2.8401 policy=2.5959 value=0.2703 entropy=2.6133
+2026-04-04 10:42:42,478 hexo.training.pipeline INFO === Round 33 ===
+2026-04-04 10:42:53,280 hexo.training.self_play INFO Games: A=8 B=24 draws=0 draw_rate=0.00
+2026-04-04 10:42:53,286 hexo.training.pipeline INFO Generated 542 examples (32 games, draw_rate=0.00)
+2026-04-04 10:43:13,643 hexo.training.pipeline INFO   Epoch 1: loss=2.8461 policy=2.6002 value=0.2721 entropy=2.6139
+2026-04-04 10:43:13,652 hexo.training.pipeline INFO === Round 34 ===
+2026-04-04 10:43:26,730 hexo.training.self_play INFO Games: A=5 B=27 draws=0 draw_rate=0.00
+2026-04-04 10:43:26,736 hexo.training.pipeline INFO Generated 652 examples (32 games, draw_rate=0.00)
+2026-04-04 10:43:45,685 hexo.training.pipeline INFO   Epoch 1: loss=2.8754 policy=2.6139 value=0.2878 entropy=2.6312
+2026-04-04 10:43:45,693 hexo.training.pipeline INFO === Round 35 ===
+2026-04-04 10:43:55,286 hexo.training.self_play INFO Games: A=2 B=30 draws=0 draw_rate=0.00
+2026-04-04 10:43:55,291 hexo.training.pipeline INFO Generated 433 examples (32 games, draw_rate=0.00)
+2026-04-04 10:44:11,812 hexo.training.pipeline INFO   Epoch 1: loss=2.8268 policy=2.6186 value=0.2346 entropy=2.6339
+2026-04-04 10:44:11,819 hexo.training.pipeline INFO === Round 36 ===
+2026-04-04 10:44:20,257 hexo.training.self_play INFO Games: A=3 B=29 draws=0 draw_rate=0.00
+2026-04-04 10:44:20,262 hexo.training.pipeline INFO Generated 439 examples (32 games, draw_rate=0.00)
+2026-04-04 10:44:35,095 hexo.training.pipeline INFO   Epoch 1: loss=2.8025 policy=2.6074 value=0.2214 entropy=2.6204
+2026-04-04 10:44:35,103 hexo.training.pipeline INFO === Round 37 ===
+2026-04-04 10:44:44,261 hexo.training.self_play INFO Games: A=2 B=30 draws=0 draw_rate=0.00
+2026-04-04 10:44:44,267 hexo.training.pipeline INFO Generated 466 examples (32 games, draw_rate=0.00)
+2026-04-04 10:44:56,936 hexo.training.pipeline INFO   Epoch 1: loss=2.7495 policy=2.5827 value=0.1927 entropy=2.5926
+2026-04-04 10:44:56,943 hexo.training.pipeline INFO === Round 38 ===
+2026-04-04 10:45:03,602 hexo.training.self_play INFO Games: A=1 B=31 draws=0 draw_rate=0.00
+2026-04-04 10:45:03,606 hexo.training.pipeline INFO Generated 381 examples (32 games, draw_rate=0.00)
+2026-04-04 10:45:14,960 hexo.training.pipeline INFO   Epoch 1: loss=2.7033 policy=2.5721 value=0.1571 entropy=2.5848
+2026-04-04 10:45:14,968 hexo.training.pipeline INFO === Round 39 ===
+2026-04-04 10:45:24,372 hexo.training.self_play INFO Games: A=0 B=32 draws=0 draw_rate=0.00
+2026-04-04 10:45:24,376 hexo.training.pipeline INFO Generated 441 examples (32 games, draw_rate=0.00)
+2026-04-04 10:45:34,161 hexo.training.pipeline INFO   Epoch 1: loss=2.6564 policy=2.5494 value=0.1326 entropy=2.5585
+2026-04-04 10:45:34,169 hexo.training.pipeline INFO === Round 40 ===
+2026-04-04 10:45:43,305 hexo.training.self_play INFO Games: A=2 B=32 draws=0 draw_rate=0.00
+2026-04-04 10:45:43,310 hexo.training.pipeline INFO Generated 453 examples (32 games, draw_rate=0.00)
+2026-04-04 10:45:51,137 hexo.training.pipeline INFO   Epoch 1: loss=2.6726 policy=2.5720 value=0.1264 entropy=2.5831
+2026-04-04 10:45:51,144 hexo.training.pipeline INFO === Round 41 ===
+2026-04-04 10:45:58,820 hexo.training.self_play INFO Games: A=1 B=32 draws=0 draw_rate=0.00
+2026-04-04 10:45:58,825 hexo.training.pipeline INFO Generated 382 examples (32 games, draw_rate=0.00)
+2026-04-04 10:46:05,982 hexo.training.pipeline INFO   Epoch 1: loss=2.6628 policy=2.5843 value=0.1045 entropy=2.5957
+2026-04-04 10:46:06,006 hexo.training.pipeline INFO === Round 42 ===
+2026-04-04 10:46:15,650 hexo.training.self_play INFO Games: A=11 B=22 draws=0 draw_rate=0.00
+2026-04-04 10:46:15,654 hexo.training.pipeline INFO Generated 471 examples (32 games, draw_rate=0.00)
+2026-04-04 10:46:22,622 hexo.training.pipeline INFO   Epoch 1: loss=2.6380 policy=2.5233 value=0.1401 entropy=2.5335
+2026-04-04 10:46:22,630 hexo.training.pipeline INFO === Round 43 ===
+2026-04-04 10:46:32,387 hexo.training.self_play INFO Games: A=22 B=11 draws=0 draw_rate=0.00
+2026-04-04 10:46:32,391 hexo.training.pipeline INFO Generated 524 examples (32 games, draw_rate=0.00)
+2026-04-04 10:46:38,778 hexo.training.pipeline INFO   Epoch 1: loss=2.6729 policy=2.4989 value=0.1991 entropy=2.5098
+2026-04-04 10:46:38,786 hexo.training.pipeline INFO === Round 44 ===
+2026-04-04 10:46:49,148 hexo.training.self_play INFO Games: A=30 B=4 draws=0 draw_rate=0.00
+2026-04-04 10:46:49,153 hexo.training.pipeline INFO Generated 543 examples (32 games, draw_rate=0.00)
+2026-04-04 10:46:55,780 hexo.training.pipeline INFO   Epoch 1: loss=2.7105 policy=2.5109 value=0.2248 entropy=2.5232
+2026-04-04 10:46:55,788 hexo.training.pipeline INFO === Round 45 ===
+2026-04-04 10:47:07,065 hexo.training.self_play INFO Games: A=13 B=20 draws=0 draw_rate=0.00
+2026-04-04 10:47:07,070 hexo.training.pipeline INFO Generated 589 examples (32 games, draw_rate=0.00)
+2026-04-04 10:47:13,282 hexo.training.pipeline INFO   Epoch 1: loss=2.7410 policy=2.4816 value=0.2844 entropy=2.4944
+2026-04-04 10:47:13,290 hexo.training.pipeline INFO === Round 46 ===
+2026-04-04 10:47:23,818 hexo.training.self_play INFO Games: A=18 B=14 draws=0 draw_rate=0.00
+2026-04-04 10:47:23,825 hexo.training.pipeline INFO Generated 587 examples (32 games, draw_rate=0.00)
+2026-04-04 10:47:29,844 hexo.training.pipeline INFO   Epoch 1: loss=2.7327 policy=2.4259 value=0.3312 entropy=2.4378
+2026-04-04 10:47:29,852 hexo.training.pipeline INFO === Round 47 ===
+2026-04-04 10:47:40,931 hexo.training.self_play INFO Games: A=15 B=18 draws=0 draw_rate=0.00
+2026-04-04 10:47:40,936 hexo.training.pipeline INFO Generated 610 examples (32 games, draw_rate=0.00)
+2026-04-04 10:47:46,699 hexo.training.pipeline INFO   Epoch 1: loss=2.7097 policy=2.3862 value=0.3475 entropy=2.3995
+2026-04-04 10:47:46,707 hexo.training.pipeline INFO === Round 48 ===
+2026-04-04 10:47:59,416 hexo.training.self_play INFO Games: A=12 B=22 draws=0 draw_rate=0.00
+2026-04-04 10:47:59,421 hexo.training.pipeline INFO Generated 739 examples (32 games, draw_rate=0.00)
+2026-04-04 10:48:05,389 hexo.training.pipeline INFO   Epoch 1: loss=2.6395 policy=2.3059 value=0.3568 entropy=2.3218
+2026-04-04 10:48:05,397 hexo.training.pipeline INFO === Round 49 ===
+2026-04-04 10:48:17,526 hexo.training.self_play INFO Games: A=5 B=28 draws=0 draw_rate=0.00
+2026-04-04 10:48:17,531 hexo.training.pipeline INFO Generated 645 examples (32 games, draw_rate=0.00)
+2026-04-04 10:48:23,388 hexo.training.pipeline INFO   Epoch 1: loss=2.5552 policy=2.2521 value=0.3257 entropy=2.2601
+2026-04-04 10:48:23,396 hexo.training.pipeline INFO === Round 50 ===
+2026-04-04 10:48:35,064 hexo.training.self_play INFO Games: A=2 B=33 draws=0 draw_rate=0.00
+2026-04-04 10:48:35,069 hexo.training.pipeline INFO Generated 636 examples (32 games, draw_rate=0.00)
+2026-04-04 10:48:40,980 hexo.training.pipeline INFO   Epoch 1: loss=2.4617 policy=2.2043 value=0.2796 entropy=2.2114
+2026-04-04 10:48:40,988 hexo.training.pipeline INFO === Round 51 ===
+2026-04-04 10:48:52,069 hexo.training.self_play INFO Games: A=1 B=33 draws=0 draw_rate=0.00
+2026-04-04 10:48:52,073 hexo.training.pipeline INFO Generated 630 examples (32 games, draw_rate=0.00)
+2026-04-04 10:48:58,165 hexo.training.pipeline INFO   Epoch 1: loss=2.3651 policy=2.1492 value=0.2375 entropy=2.1621
+2026-04-04 10:48:58,174 hexo.training.pipeline INFO === Round 52 ===
+2026-04-04 10:49:09,962 hexo.training.self_play INFO Games: A=1 B=33 draws=0 draw_rate=0.00
+2026-04-04 10:49:09,966 hexo.training.pipeline INFO Generated 617 examples (32 games, draw_rate=0.00)
+2026-04-04 10:49:15,870 hexo.training.pipeline INFO   Epoch 1: loss=2.3191 policy=2.1218 value=0.2186 entropy=2.1313
+2026-04-04 10:49:15,878 hexo.training.pipeline INFO === Round 53 ===
+2026-04-04 10:49:27,241 hexo.training.self_play INFO Games: A=0 B=32 draws=0 draw_rate=0.00
+2026-04-04 10:49:27,249 hexo.training.pipeline INFO Generated 625 examples (32 games, draw_rate=0.00)
+2026-04-04 10:49:33,262 hexo.training.pipeline INFO   Epoch 1: loss=2.2648 policy=2.1295 value=0.1567 entropy=2.1382
+2026-04-04 10:49:33,269 hexo.training.pipeline INFO === Round 54 ===
+2026-04-04 10:49:43,991 hexo.training.self_play INFO Games: A=0 B=34 draws=0 draw_rate=0.00
+2026-04-04 10:49:43,995 hexo.training.pipeline INFO Generated 570 examples (32 games, draw_rate=0.00)
+2026-04-04 10:49:49,835 hexo.training.pipeline INFO   Epoch 1: loss=2.1977 policy=2.0754 value=0.1432 entropy=2.0856
+2026-04-04 10:49:49,843 hexo.training.pipeline INFO === Round 55 ===
+2026-04-04 10:50:00,530 hexo.training.self_play INFO Games: A=0 B=32 draws=0 draw_rate=0.00
+2026-04-04 10:50:00,535 hexo.training.pipeline INFO Generated 575 examples (32 games, draw_rate=0.00)
+2026-04-04 10:50:06,748 hexo.training.pipeline INFO   Epoch 1: loss=2.1321 policy=2.0596 value=0.0931 entropy=2.0692
+2026-04-04 10:50:06,756 hexo.training.pipeline INFO === Round 56 ===
+2026-04-04 10:50:17,923 hexo.training.self_play INFO Games: A=1 B=31 draws=0 draw_rate=0.00
+2026-04-04 10:50:17,928 hexo.training.pipeline INFO Generated 585 examples (32 games, draw_rate=0.00)
+2026-04-04 10:50:23,874 hexo.training.pipeline INFO   Epoch 1: loss=2.1202 policy=2.0604 value=0.0804 entropy=2.0669
+2026-04-04 10:50:23,882 hexo.training.pipeline INFO === Round 57 ===
+2026-04-04 10:50:34,573 hexo.training.self_play INFO Games: A=0 B=33 draws=0 draw_rate=0.00
+2026-04-04 10:50:34,578 hexo.training.pipeline INFO Generated 584 examples (32 games, draw_rate=0.00)
+2026-04-04 10:50:40,755 hexo.training.pipeline INFO   Epoch 1: loss=2.0900 policy=2.0306 value=0.0798 entropy=2.0364
+2026-04-04 10:50:40,762 hexo.training.pipeline INFO === Round 58 ===
+2026-04-04 10:50:51,217 hexo.training.self_play INFO Games: A=1 B=33 draws=0 draw_rate=0.00
+2026-04-04 10:50:51,221 hexo.training.pipeline INFO Generated 635 examples (32 games, draw_rate=0.00)
+2026-04-04 10:50:57,496 hexo.training.pipeline INFO   Epoch 1: loss=2.1265 policy=2.0500 value=0.0971 entropy=2.0608
+2026-04-04 10:50:57,503 hexo.training.pipeline INFO === Round 59 ===
+2026-04-04 10:51:07,413 hexo.training.self_play INFO Games: A=0 B=32 draws=0 draw_rate=0.00
+2026-04-04 10:51:07,418 hexo.training.pipeline INFO Generated 520 examples (32 games, draw_rate=0.00)
+2026-04-04 10:51:13,595 hexo.training.pipeline INFO   Epoch 1: loss=2.0791 policy=2.0338 value=0.0657 entropy=2.0424
+2026-04-04 10:51:13,603 hexo.training.pipeline INFO === Round 60 ===
+2026-04-04 10:51:22,951 hexo.training.self_play INFO Games: A=1 B=31 draws=0 draw_rate=0.00
+2026-04-04 10:51:22,956 hexo.training.pipeline INFO Generated 536 examples (32 games, draw_rate=0.00)
+2026-04-04 10:51:29,258 hexo.training.pipeline INFO   Epoch 1: loss=2.0404 policy=1.9997 value=0.0607 entropy=2.0073
+2026-04-04 10:51:29,266 hexo.training.pipeline INFO === Round 61 ===
+2026-04-04 10:51:39,216 hexo.training.self_play INFO Games: A=2 B=31 draws=0 draw_rate=0.00
+2026-04-04 10:51:39,221 hexo.training.pipeline INFO Generated 593 examples (32 games, draw_rate=0.00)
+2026-04-04 10:51:45,527 hexo.training.pipeline INFO   Epoch 1: loss=2.0378 policy=1.9870 value=0.0708 entropy=1.9975
+2026-04-04 10:51:45,535 hexo.training.pipeline INFO === Round 62 ===
+2026-04-04 10:51:57,070 hexo.training.self_play INFO Games: A=0 B=40 draws=0 draw_rate=0.00
+2026-04-04 10:51:57,075 hexo.training.pipeline INFO Generated 686 examples (32 games, draw_rate=0.00)
+2026-04-04 10:52:03,517 hexo.training.pipeline INFO   Epoch 1: loss=2.0017 policy=1.9677 value=0.0537 entropy=1.9741
+2026-04-04 10:52:03,525 hexo.training.pipeline INFO === Round 63 ===
+2026-04-04 10:52:13,992 hexo.training.self_play INFO Games: A=0 B=38 draws=0 draw_rate=0.00
+2026-04-04 10:52:13,995 hexo.training.pipeline INFO Generated 647 examples (32 games, draw_rate=0.00)
+2026-04-04 10:52:20,659 hexo.training.pipeline INFO   Epoch 1: loss=1.9829 policy=1.9662 value=0.0365 entropy=1.9753
+2026-04-04 10:52:20,667 hexo.training.pipeline INFO === Round 64 ===
+2026-04-04 10:52:31,393 hexo.training.self_play INFO Games: A=0 B=37 draws=0 draw_rate=0.00
+2026-04-04 10:52:31,398 hexo.training.pipeline INFO Generated 650 examples (32 games, draw_rate=0.00)
+2026-04-04 10:52:38,149 hexo.training.pipeline INFO   Epoch 1: loss=1.9345 policy=1.9255 value=0.0283 entropy=1.9308
+2026-04-04 10:52:38,158 hexo.training.pipeline INFO === Round 65 ===
+2026-04-04 10:52:49,290 hexo.training.self_play INFO Games: A=0 B=38 draws=0 draw_rate=0.00
+2026-04-04 10:52:49,294 hexo.training.pipeline INFO Generated 634 examples (32 games, draw_rate=0.00)
+2026-04-04 10:52:56,196 hexo.training.pipeline INFO   Epoch 1: loss=1.9384 policy=1.9365 value=0.0213 entropy=1.9437
+2026-04-04 10:52:56,204 hexo.training.pipeline INFO === Round 66 ===
+2026-04-04 10:53:06,353 hexo.training.self_play INFO Games: A=1 B=32 draws=0 draw_rate=0.00
+2026-04-04 10:53:06,358 hexo.training.pipeline INFO Generated 599 examples (32 games, draw_rate=0.00)
+2026-04-04 10:53:12,894 hexo.training.pipeline INFO   Epoch 1: loss=1.9623 policy=1.9569 value=0.0250 entropy=1.9648
+2026-04-04 10:53:12,901 hexo.training.pipeline INFO === Round 67 ===
+2026-04-04 10:53:22,458 hexo.training.self_play INFO Games: A=2 B=30 draws=0 draw_rate=0.00
+2026-04-04 10:53:22,464 hexo.training.pipeline INFO Generated 543 examples (32 games, draw_rate=0.00)
+2026-04-04 10:53:29,196 hexo.training.pipeline INFO   Epoch 1: loss=1.9965 policy=1.9655 value=0.0507 entropy=1.9756
+2026-04-04 10:53:29,204 hexo.training.pipeline INFO === Round 68 ===
+2026-04-04 10:53:37,800 hexo.training.self_play INFO Games: A=0 B=32 draws=0 draw_rate=0.00
+2026-04-04 10:53:37,805 hexo.training.pipeline INFO Generated 533 examples (32 games, draw_rate=0.00)
+2026-04-04 10:53:44,484 hexo.training.pipeline INFO   Epoch 1: loss=2.0138 policy=1.9931 value=0.0407 entropy=1.9988
+2026-04-04 10:53:44,492 hexo.training.pipeline INFO === Round 69 ===
+2026-04-04 10:53:52,936 hexo.training.self_play INFO Games: A=0 B=32 draws=0 draw_rate=0.00
+2026-04-04 10:53:52,942 hexo.training.pipeline INFO Generated 488 examples (32 games, draw_rate=0.00)
+2026-04-04 10:53:59,534 hexo.training.pipeline INFO   Epoch 1: loss=2.0373 policy=2.0292 value=0.0285 entropy=2.0397
+2026-04-04 10:53:59,541 hexo.training.pipeline INFO === Round 70 ===
+2026-04-04 10:54:08,719 hexo.training.self_play INFO Games: A=1 B=33 draws=0 draw_rate=0.00
+2026-04-04 10:54:08,724 hexo.training.pipeline INFO Generated 538 examples (32 games, draw_rate=0.00)
+2026-04-04 10:54:15,271 hexo.training.pipeline INFO   Epoch 1: loss=2.0738 policy=2.0546 value=0.0399 entropy=2.0669
+2026-04-04 10:54:15,279 hexo.training.pipeline INFO === Round 71 ===
+2026-04-04 10:54:24,123 hexo.training.self_play INFO Games: A=3 B=29 draws=0 draw_rate=0.00
+2026-04-04 10:54:24,127 hexo.training.pipeline INFO Generated 478 examples (32 games, draw_rate=0.00)
+2026-04-04 10:54:30,436 hexo.training.pipeline INFO   Epoch 1: loss=2.0889 policy=2.0382 value=0.0712 entropy=2.0496
+2026-04-04 10:54:30,444 hexo.training.pipeline INFO === Round 72 ===
+2026-04-04 10:54:39,229 hexo.training.self_play INFO Games: A=1 B=31 draws=0 draw_rate=0.00
+2026-04-04 10:54:39,234 hexo.training.pipeline INFO Generated 555 examples (32 games, draw_rate=0.00)
+2026-04-04 10:54:45,719 hexo.training.pipeline INFO   Epoch 1: loss=2.0388 policy=1.9939 value=0.0649 entropy=2.0025
+2026-04-04 10:54:45,726 hexo.training.pipeline INFO === Round 73 ===
+2026-04-04 10:54:53,173 hexo.training.self_play INFO Games: A=2 B=30 draws=0 draw_rate=0.00
+2026-04-04 10:54:53,178 hexo.training.pipeline INFO Generated 488 examples (32 games, draw_rate=0.00)
+2026-04-04 10:54:59,537 hexo.training.pipeline INFO   Epoch 1: loss=2.1257 policy=2.0735 value=0.0730 entropy=2.0823
+2026-04-04 10:54:59,545 hexo.training.pipeline INFO === Round 74 ===
+2026-04-04 10:55:09,001 hexo.training.self_play INFO Games: A=3 B=31 draws=0 draw_rate=0.00
+2026-04-04 10:55:09,006 hexo.training.pipeline INFO Generated 552 examples (32 games, draw_rate=0.00)
+2026-04-04 10:55:15,118 hexo.training.pipeline INFO   Epoch 1: loss=2.1248 policy=2.0456 value=0.0998 entropy=2.0536
+2026-04-04 10:55:15,126 hexo.training.pipeline INFO === Round 75 ===
+2026-04-04 10:55:24,580 hexo.training.self_play INFO Games: A=1 B=31 draws=0 draw_rate=0.00
+2026-04-04 10:55:24,585 hexo.training.pipeline INFO Generated 542 examples (32 games, draw_rate=0.00)
+2026-04-04 10:55:30,989 hexo.training.pipeline INFO   Epoch 1: loss=2.0672 policy=2.0047 value=0.0827 entropy=2.0163
+2026-04-04 10:55:30,996 hexo.training.pipeline INFO === Round 76 ===
+2026-04-04 10:55:38,883 hexo.training.self_play INFO Games: A=3 B=29 draws=0 draw_rate=0.00
+2026-04-04 10:55:38,888 hexo.training.pipeline INFO Generated 474 examples (32 games, draw_rate=0.00)
+2026-04-04 10:55:45,132 hexo.training.pipeline INFO   Epoch 1: loss=2.1101 policy=2.0295 value=0.1010 entropy=2.0411
+2026-04-04 10:55:45,140 hexo.training.pipeline INFO === Round 77 ===
+2026-04-04 10:55:52,995 hexo.training.self_play INFO Games: A=6 B=26 draws=0 draw_rate=0.00
+2026-04-04 10:55:53,000 hexo.training.pipeline INFO Generated 485 examples (32 games, draw_rate=0.00)
+2026-04-04 10:55:59,221 hexo.training.pipeline INFO   Epoch 1: loss=2.0988 policy=2.0037 value=0.1153 entropy=2.0155
+2026-04-04 10:55:59,229 hexo.training.pipeline INFO === Round 78 ===
+2026-04-04 10:56:08,280 hexo.training.self_play INFO Games: A=4 B=28 draws=0 draw_rate=0.00
+2026-04-04 10:56:08,285 hexo.training.pipeline INFO Generated 522 examples (32 games, draw_rate=0.00)
+2026-04-04 10:56:14,272 hexo.training.pipeline INFO   Epoch 1: loss=2.0933 policy=1.9806 value=0.1327 entropy=1.9938
+2026-04-04 10:56:14,280 hexo.training.pipeline INFO === Round 79 ===
+2026-04-04 10:56:23,064 hexo.training.self_play INFO Games: A=18 B=15 draws=0 draw_rate=0.00
+2026-04-04 10:56:23,070 hexo.training.pipeline INFO Generated 497 examples (32 games, draw_rate=0.00)
+2026-04-04 10:56:29,270 hexo.training.pipeline INFO   Epoch 1: loss=2.1745 policy=1.9532 value=0.2409 entropy=1.9668
+2026-04-04 10:56:29,277 hexo.training.pipeline INFO === Round 80 ===
+2026-04-04 10:56:38,656 hexo.training.self_play INFO Games: A=16 B=16 draws=0 draw_rate=0.00
+2026-04-04 10:56:38,661 hexo.training.pipeline INFO Generated 554 examples (32 games, draw_rate=0.00)
+2026-04-04 10:56:44,554 hexo.training.pipeline INFO   Epoch 1: loss=2.1783 policy=1.9461 value=0.2518 entropy=1.9551
+2026-04-04 10:56:44,561 hexo.training.pipeline INFO === Round 81 ===
+2026-04-04 10:56:54,447 hexo.training.self_play INFO Games: A=27 B=9 draws=0 draw_rate=0.00
+2026-04-04 10:56:54,452 hexo.training.pipeline INFO Generated 565 examples (32 games, draw_rate=0.00)
+2026-04-04 10:57:00,347 hexo.training.pipeline INFO   Epoch 1: loss=2.1993 policy=1.9112 value=0.3073 entropy=1.9225
+2026-04-04 10:57:00,354 hexo.training.pipeline INFO === Round 82 ===
+2026-04-04 10:57:09,975 hexo.training.self_play INFO Games: A=12 B=20 draws=0 draw_rate=0.00
+2026-04-04 10:57:09,980 hexo.training.pipeline INFO Generated 527 examples (32 games, draw_rate=0.00)
+2026-04-04 10:57:16,192 hexo.training.pipeline INFO   Epoch 1: loss=2.1817 policy=1.8974 value=0.3034 entropy=1.9081
+2026-04-04 10:57:16,200 hexo.training.pipeline INFO === Round 83 ===
+2026-04-04 10:57:25,642 hexo.training.self_play INFO Games: A=29 B=6 draws=0 draw_rate=0.00
+2026-04-04 10:57:25,646 hexo.training.pipeline INFO Generated 526 examples (32 games, draw_rate=0.00)
+2026-04-04 10:57:31,467 hexo.training.pipeline INFO   Epoch 1: loss=2.1810 policy=1.8882 value=0.3118 entropy=1.8975
+2026-04-04 10:57:31,475 hexo.training.pipeline INFO === Round 84 ===
+2026-04-04 10:57:41,535 hexo.training.self_play INFO Games: A=15 B=21 draws=0 draw_rate=0.00
+2026-04-04 10:57:41,540 hexo.training.pipeline INFO Generated 562 examples (32 games, draw_rate=0.00)
+2026-04-04 10:57:47,206 hexo.training.pipeline INFO   Epoch 1: loss=2.1974 policy=1.8362 value=0.3797 entropy=1.8461
+2026-04-04 10:57:47,213 hexo.training.pipeline INFO === Round 85 ===
+2026-04-04 10:57:55,922 hexo.training.self_play INFO Games: A=4 B=28 draws=0 draw_rate=0.00
+2026-04-04 10:57:55,927 hexo.training.pipeline INFO Generated 545 examples (32 games, draw_rate=0.00)
+2026-04-04 10:58:02,248 hexo.training.pipeline INFO   Epoch 1: loss=2.3155 policy=1.9370 value=0.3980 entropy=1.9537
+2026-04-04 10:58:02,273 hexo.training.pipeline INFO === Round 86 ===
+2026-04-04 10:58:11,794 hexo.training.self_play INFO Games: A=11 B=21 draws=0 draw_rate=0.00
+2026-04-04 10:58:11,800 hexo.training.pipeline INFO Generated 519 examples (32 games, draw_rate=0.00)
+2026-04-04 10:58:18,266 hexo.training.pipeline INFO   Epoch 1: loss=2.2607 policy=1.8833 value=0.3963 entropy=1.8941
+2026-04-04 10:58:18,273 hexo.training.pipeline INFO === Round 87 ===
+2026-04-04 10:58:27,928 hexo.training.self_play INFO Games: A=6 B=30 draws=0 draw_rate=0.00
+2026-04-04 10:58:27,932 hexo.training.pipeline INFO Generated 568 examples (32 games, draw_rate=0.00)
+2026-04-04 10:58:34,322 hexo.training.pipeline INFO   Epoch 1: loss=2.2652 policy=1.9027 value=0.3818 entropy=1.9193
+2026-04-04 10:58:34,347 hexo.training.pipeline INFO === Round 88 ===
+2026-04-04 10:58:44,666 hexo.training.self_play INFO Games: A=0 B=32 draws=0 draw_rate=0.00
+2026-04-04 10:58:44,671 hexo.training.pipeline INFO Generated 528 examples (32 games, draw_rate=0.00)
+2026-04-04 10:58:50,416 hexo.training.pipeline INFO   Epoch 1: loss=2.2420 policy=1.9338 value=0.3276 entropy=1.9462
+2026-04-04 10:58:50,424 hexo.training.pipeline INFO === Round 89 ===
+2026-04-04 10:58:59,566 hexo.training.self_play INFO Games: A=1 B=31 draws=0 draw_rate=0.00
+2026-04-04 10:58:59,571 hexo.training.pipeline INFO Generated 527 examples (32 games, draw_rate=0.00)
+2026-04-04 10:59:06,399 hexo.training.pipeline INFO   Epoch 1: loss=2.1703 policy=1.9296 value=0.2601 entropy=1.9415
+2026-04-04 10:59:06,407 hexo.training.pipeline INFO === Round 90 ===
+2026-04-04 10:59:16,470 hexo.training.self_play INFO Games: A=1 B=34 draws=0 draw_rate=0.00
+2026-04-04 10:59:16,474 hexo.training.pipeline INFO Generated 560 examples (32 games, draw_rate=0.00)
+2026-04-04 10:59:22,682 hexo.training.pipeline INFO   Epoch 1: loss=2.1571 policy=1.9636 value=0.2133 entropy=1.9734
+2026-04-04 10:59:22,690 hexo.training.pipeline INFO === Round 91 ===
+2026-04-04 10:59:31,179 hexo.training.self_play INFO Games: A=4 B=29 draws=0 draw_rate=0.00
+2026-04-04 10:59:31,184 hexo.training.pipeline INFO Generated 528 examples (32 games, draw_rate=0.00)
+2026-04-04 10:59:36,799 hexo.training.pipeline INFO   Epoch 1: loss=2.1428 policy=1.9418 value=0.2205 entropy=1.9520
+2026-04-04 10:59:36,807 hexo.training.pipeline INFO === Round 92 ===
+2026-04-04 10:59:45,209 hexo.training.self_play INFO Games: A=1 B=32 draws=0 draw_rate=0.00
+2026-04-04 10:59:45,214 hexo.training.pipeline INFO Generated 498 examples (32 games, draw_rate=0.00)
+2026-04-04 10:59:50,872 hexo.training.pipeline INFO   Epoch 1: loss=2.1129 policy=1.9652 value=0.1676 entropy=1.9792
+2026-04-04 10:59:50,880 hexo.training.pipeline INFO === Round 93 ===
+2026-04-04 11:00:00,298 hexo.training.self_play INFO Games: A=3 B=31 draws=0 draw_rate=0.00
+2026-04-04 11:00:00,302 hexo.training.pipeline INFO Generated 559 examples (32 games, draw_rate=0.00)
+2026-04-04 11:00:06,058 hexo.training.pipeline INFO   Epoch 1: loss=2.0985 policy=1.9569 value=0.1612 entropy=1.9670
+2026-04-04 11:00:06,066 hexo.training.pipeline INFO === Round 94 ===
+2026-04-04 11:00:14,696 hexo.training.self_play INFO Games: A=2 B=30 draws=0 draw_rate=0.00
+2026-04-04 11:00:14,702 hexo.training.pipeline INFO Generated 514 examples (32 games, draw_rate=0.00)
+2026-04-04 11:00:20,494 hexo.training.pipeline INFO   Epoch 1: loss=2.1705 policy=2.0248 value=0.1661 entropy=2.0358
+2026-04-04 11:00:20,501 hexo.training.pipeline INFO === Round 95 ===
+2026-04-04 11:00:29,703 hexo.training.self_play INFO Games: A=2 B=32 draws=0 draw_rate=0.00
+2026-04-04 11:00:29,707 hexo.training.pipeline INFO Generated 516 examples (32 games, draw_rate=0.00)
+2026-04-04 11:00:35,557 hexo.training.pipeline INFO   Epoch 1: loss=2.1547 policy=2.0226 value=0.1525 entropy=2.0349
+2026-04-04 11:00:35,565 hexo.training.pipeline INFO === Round 96 ===
+2026-04-04 11:00:46,013 hexo.training.self_play INFO Games: A=6 B=31 draws=0 draw_rate=0.00
+2026-04-04 11:00:46,017 hexo.training.pipeline INFO Generated 636 examples (32 games, draw_rate=0.00)
+2026-04-04 11:00:52,013 hexo.training.pipeline INFO   Epoch 1: loss=2.1900 policy=2.0424 value=0.1681 entropy=2.0566
+2026-04-04 11:00:52,037 hexo.training.pipeline INFO === Round 97 ===
+2026-04-04 11:01:01,364 hexo.training.self_play INFO Games: A=16 B=16 draws=0 draw_rate=0.00
+2026-04-04 11:01:01,370 hexo.training.pipeline INFO Generated 556 examples (32 games, draw_rate=0.00)
+2026-04-04 11:01:07,112 hexo.training.pipeline INFO   Epoch 1: loss=2.2062 policy=1.9887 value=0.2375 entropy=2.0030
+2026-04-04 11:01:07,136 hexo.training.pipeline INFO === Round 98 ===
+2026-04-04 11:01:15,565 hexo.training.self_play INFO Games: A=21 B=11 draws=0 draw_rate=0.00
+2026-04-04 11:01:15,572 hexo.training.pipeline INFO Generated 552 examples (32 games, draw_rate=0.00)
+2026-04-04 11:01:21,396 hexo.training.pipeline INFO   Epoch 1: loss=2.2816 policy=2.0089 value=0.2928 entropy=2.0200
+2026-04-04 11:01:21,404 hexo.training.pipeline INFO === Round 99 ===
+2026-04-04 11:01:29,777 hexo.training.self_play INFO Games: A=20 B=12 draws=0 draw_rate=0.00
+2026-04-04 11:01:29,782 hexo.training.pipeline INFO Generated 596 examples (32 games, draw_rate=0.00)
+2026-04-04 11:01:35,597 hexo.training.pipeline INFO   Epoch 1: loss=2.2947 policy=2.0005 value=0.3143 entropy=2.0094
+2026-04-04 11:01:35,605 __main__ INFO DONE: 3287s (54.8min)
